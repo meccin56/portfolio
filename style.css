@@ -1,0 +1,729 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+    scroll-padding-top:120px ;
+}
+
+body{
+    font-family:'Noto Sans JP', 'Noto Serif JP', 'Roboto', sans-serif;
+    line-height: 1.7;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+a.anchor{
+    display: block;
+    padding-top: 120px;
+    margin-top: -120px;
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section,main,footer,.banner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 8rem;
+}
+
+.section-box1{
+    background-color: rgba(236, 128, 124, 0.2);
+    border-radius: 0px 65px 0px 65px;
+    padding:2rem 4rem;
+}
+
+.section-box2{
+    background-color: rgb(255, 247, 153,0.3);
+    border-radius: 65px 0px 65px 0px;
+    padding:2rem 4rem;  
+}
+
+.section-box3{
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    padding:2rem 4rem; 
+    border-radius: 10px;
+}
+
+h2{
+    margin-bottom: 1.6rem;
+}
+
+.h2center{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.lead{
+    padding: 0% 10%;
+    margin-bottom: 1.4rem;
+}
+
+.p-center{
+    text-align: center;
+}
+
+/* 下線 */
+.reasons span{ 
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.5rem; /* 線の太さ */
+    text-decoration-color: rgb(255, 196, 153,0.6); /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+
+.section-box1 span,.section-box3 span{ 
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.5rem; /* 線の太さ */
+    text-decoration-color: rgb(153, 213, 255,0.6); /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+
+.section-box2 span{ 
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.5rem; /* 線の太さ */
+    text-decoration-color: rgb(236, 128, 124,0.3); /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+
+
+/*ヘッダー */
+.header-wrapper{
+    background-color: #ffffff;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    width: 100%;
+    height: 120px;
+    padding:0.6rem 10rem;
+    border-bottom:1px solid #99d5ff;
+}
+
+.header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header small{
+    padding-right: 1rem;
+}
+
+nav{
+    padding:0 0.5rem;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.header-li{
+    position: relative;
+    padding-left: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.header-li::before{
+    position: absolute;
+	top: 25%;
+	left: 0%;
+	content: "";
+	width: 1.6px;
+	height: 50%;
+	background-color: #99d5ff;
+    
+}
+
+.header-li :hover{
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.1rem; /* 線の太さ */
+    text-decoration-color: rgba(236, 128, 124, 0.4); /* 線の色 */
+    text-underline-offset: 0.5em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+}
+
+header .btn{
+    background-color: #ec807c;
+    font-weight: bolder;
+    color:#fff;
+    border-radius: 40px;
+    transition: all 1s;
+    padding:0.5rem 2rem;
+}
+
+.btn a{
+    display: block;
+}
+
+.btn:hover{
+    background-color:rgb(236, 128, 124, 0.4) ;
+}
+
+/* メインポスター */
+main{
+    padding:10% 8%;
+}
+
+/*　選ばれる理由　*/
+.reason {
+    padding: 2rem 2rem;
+    background-image: linear-gradient(transparent calc(100% - 1px), #e6edf3 50%, #e6edf3), linear-gradient(90deg, transparent calc(100% - 1px), #e6edf3 50%, #e6edf3);
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.reason h1{
+    display: inline-block;
+    background:
+    linear-gradient(transparent 70%, 
+    rgba(236, 128, 124, 0.2) 70%,
+    rgb(236, 128, 124,0.8) 95%,
+    rgba(236, 128, 124, 0.2));
+    margin-bottom: 2rem;   
+}
+
+.reason-box{
+    display: flex;
+    justify-content: space-between;
+    padding:0 3rem;
+}
+
+.reasons{
+    text-align: left;
+}
+
+.reasons p{
+    font-size:1.1rem;
+    color:rgb(51, 51, 51,0.9);
+    line-height: 2.6rem;
+}
+
+/* ピンク黄色背景グリッドレイアウト */
+    /* シッター無料 */
+    /* pcレンタル */
+    /* 産休中ママ */
+    /* 少人数 */
+    /* 受講生の作品 */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    /* padding:0 3.8rem 2rem; */
+    }
+
+.grid1 img{
+    border-radius: 10px;
+}
+
+/* アンケート */
+.graph-img  {
+    width: 20%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.graph{
+    text-align: center;
+    }
+
+/* 受講生の作品 */
+.works{
+    text-align: center;    
+}
+
+/* 講師陣 */
+.teacher-wrapper{
+    display: flex;
+    text-align: center;
+    gap:1rem;
+}
+
+.teacher img{
+    width: 170px;
+    height: auto;
+}
+
+.teacher p{
+    font-size:0.8rem;
+}
+
+/* その他の講座 */
+.sonota{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sonota span{
+    font-size: 1.2rem;
+}
+
+.sonota img{
+    width: 300px;
+    height: auto;
+}
+
+.graphic-title, .video-title{
+    font-size:1.2rem;
+}
+
+/* 短期集中講座内容 */
+.lesson{
+    width:55%;
+    border: 1px solid #d0d0d0;
+    margin: auto;
+    border-radius: 16px;
+    padding:0.6rem;
+    margin-bottom: 2rem;
+}
+
+.lesson1, .lesson2, .lesson3, .lesson4{
+    border-bottom: 1px solid #d0d0d0;
+    padding:1rem;
+    font-size: 1.2rem;
+}
+
+.lesson5{
+    padding:1rem;
+    font-size: 1.2rem;
+}
+
+.lesson1{
+    color:#264E60
+}
+.lesson2{
+    color: #BDCE18;
+}
+.lesson3{
+    color: #99d5ff;
+}
+.lesson4{
+    color: #EC807C;
+}
+.lesson5{
+    color: #FFAA44;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.day {
+    text-align: center;
+}
+
+.day img{
+    width: 50%;
+    height: auto;
+}
+
+/* 低価格 */
+.price{
+    text-align: center;
+}
+
+.price1{
+    width: 50%;
+    margin-bottom: 2rem;
+    border: 1px solid #d0d0d0;
+    padding:1rem;
+    border-radius: 16px;
+}
+
+/* 受講料無料キャンペーン */
+.free{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 付箋　応用講座 */
+.fusen{
+    padding: 0% 10% 1.4%;
+    text-align: center;
+}
+
+.fusen h3{
+        font-weight: normal;
+        font-size:1rem;
+        padding-bottom: 0.12rem;
+}
+
+.fusen1 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #c499ff;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem ;
+}
+
+.fusen1::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen2 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #99a2ff;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem ;
+
+}
+
+.fusen2::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen3 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #99d5ff;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem ;
+}
+
+.fusen3::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen4 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #99fff7;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem ;
+}
+
+.fusen4::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen5 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #99ffc4;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem ;
+}
+
+.fusen5::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen6 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #a2ff99;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem ;
+}
+
+.fusen6::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen7 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #d5ff99;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem;
+}
+
+.fusen7::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen8 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #fff799;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem;
+}
+
+.fusen8::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen9 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #ffc499;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem;
+}
+
+.fusen9::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen10 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #ff99a2;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem;
+}
+
+.fusen10::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen11 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #ff99d5;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem;
+}
+
+.fusen11::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.fusen12 {
+    display: inline-block;
+    position: relative;
+    padding: .5em 1em;
+    border-right: 22px solid #f799ff;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0.9rem;
+}
+
+.fusen12::before {
+    position: absolute;
+    bottom: 2px;
+    right: -20px;
+    z-index: -1;
+    transform: rotate(5deg);
+    width: 100%;
+    height: 50%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+/* Youtbe */
+.youtube{
+    padding-top:4rem;
+    display: flex;
+}
+
+iframe{
+margin: 1.2%;
+}
+
+/* 卒業後のお仕事紹介 */
+.job{
+    display: flex;
+    justify-content: center;
+    gap:1.4rem;
+    padding:0% 10%;
+}
+
+.job img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* 人生を変えたママの声 */
+.mama{
+    display: flex;
+    gap: 6%;
+    justify-content: center;
+}
+
+.mama img{
+    width: 48%;
+    height: auto;    
+}
+
+.mama-p{
+    text-align: center;
+    margin-top:2%;
+}
+
+/*　下のバナー */
+.banner{
+    text-align: center;
+}
+
+.banner img{
+    margin-bottom: 4rem;
+}
+
+/* 運営会社について */
+.company{
+    display: flex;
+    gap:3rem;
+}
+
+.company img{
+    width: 50%;
+    height: auto; 
+}
+
+
+/* フッター */
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+footer li{
+    font-size: 0.875rem;
+}
+
+footer{
+padding: 2rem;
+background-color: #ffffff;
+border-top:1px solid rgb(208, 208, 208,0.8);
+}
