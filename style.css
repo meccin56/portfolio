@@ -100,10 +100,12 @@ aside nav ul a:hover{
 /*    --------- バナー ---------    */
 .banner{
     display: flex;
-    justify-content: flex-start;
-    height: 380px;
-    padding:0% 0% 6% 0%;
+    padding:0% 0% 10% 0%;
     gap:1rem;
+}
+.banner img{
+    display: inline-block;
+    width: 58%;
 }
 
 /*    --------- webサイト ---------    */
@@ -122,7 +124,7 @@ aside nav ul a:hover{
     color:#ffffff
 }
 
-/*    --------- プロフィール ---------    */
+/*    --------- スキル・自己紹介 ---------    */
 .profile img{
     margin:0 1rem 1rem 0;
 }
@@ -157,6 +159,7 @@ aside nav ul a:hover{
     width: 9%;
 }
 
+
 /*    --------- 現在 ---------    */
 .now{
     display: flex;
@@ -168,3 +171,58 @@ aside nav ul a:hover{
 
 /*    --------- フッター ---------    */
 /*    --------- 木の家 ---------    */
+
+/*    --------- レスポンシブ対応 ---------    */
+@media (max-width: 600px) {
+    /*    --------- 全体レイアウト ---------    */
+    .wrapper{
+        max-width: 1000px;
+        margin:0 auto;
+        padding:0 4%;
+        display: block;
+        justify-content: center;
+    }
+    aside{
+        width: 50%;
+    }
+    article{
+        width: 100%;
+    }
+
+    /*    --------- バナー ---------    */
+    .banner{
+        display: block;
+        padding:0% 0% 10% 0%;
+        gap:1rem;
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+
+    /*    --------- 仕事歴 ---------    */
+    .management{
+        display: block;
+        padding-bottom:2rem;
+    }
+    .manage-left{
+        width: 100%;
+    }
+    /*    --------- スキル・自己紹介 ---------    */
+    .skill-wrappper{
+        display: block;
+    }
+    .skill{
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+    /*    --------- 現在 ---------    */
+    .now{
+        display: block;
+        padding-bottom:2rem;
+    }
+    /*    --------- お問合せ ---------    */
+    .form iframe{
+        width: 100%;
+    }
+}
