@@ -4,12 +4,13 @@ html {
     font-size: 100%;
 }
 body{
-    font-family: "Shippori Mincho", serif,"M PLUS Rounded 1c", sans-serif;
+    font-family:  "Klee One","Noto Serif JP", "Noto Sans JP",  "cursive", serif, sans-serif;
     line-height: 1.7;
     color: rgb(23, 23, 23);
 }
+
 p,li{
-    font-size:0.9rem;
+    font-size:1rem;
 }
 a {
     text-decoration: none;
