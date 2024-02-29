@@ -45,6 +45,9 @@ h3{
     display: flex;
     justify-content: space-between;
 }
+section{
+    margin-bottom: 6rem;
+}
 .wrapper-big{
     text-align: center;
 }
@@ -57,7 +60,7 @@ article{
 header,footer{
     max-width: 1100px;
     margin:0 auto;
-    padding:2% 4% 1%;
+    padding:2% 0 2%;
 }
 header{
     border-bottom: 1px solid rgb(204, 204, 204,0.6);
@@ -124,12 +127,6 @@ aside nav ul a:hover{
 .profile img{
     margin:0 0 1rem 1rem;
 }
-.profile,.skill-wrappper{
-    margin-bottom:6rem;
-}
-.profile{
-    margin-top: 6rem;
-}
 .skill-wrappper{
     display: flex;
     justify-content: left;
@@ -144,9 +141,6 @@ aside nav ul a:hover{
 }
 
 /*    --------- 仕事歴 ---------    */
-.work{
-    padding-bottom:4rem;
-}
 .management{
     display: flex;
     padding-bottom:2rem;
