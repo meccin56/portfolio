@@ -197,9 +197,7 @@ aside nav ul a:hover{
     .manage-left{
         width: 100%;
     }
-    .work iframe{
-        width: 100%;
-    }
+
     /*    --------- スキル・自己紹介 ---------    */
     .skill-wrappper{
         display: block;
@@ -216,8 +214,10 @@ aside nav ul a:hover{
     .now-left{
         width: 100%;
     }
-    /*    --------- お問合せ ---------    */
-    .form iframe{
+
+    /*    --------- iframe読込みyoutube ---------    */
+    /*    --------- iframe読込みお問合せ ---------    */
+    iframe{
         width: 100%;
     }
 }
