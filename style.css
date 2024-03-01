@@ -206,6 +206,9 @@ aside nav ul a:hover{
         width: 80%;
         margin-bottom: 4rem;
     }
+    .profile img{
+        float: none !important;
+    }
     /*    --------- 現在 ---------    */
     .now{
         display: block;
