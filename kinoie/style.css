@@ -5,7 +5,7 @@ html {
     font-size: 100%;
 }
 body{
-    font-family:  "Klee One","Noto Serif JP", "Noto Sans JP",  "cursive", serif, sans-serif;
+    font-family:  "Zen Old Mincho","Klee One","Noto Serif JP", "Noto Sans JP",  "cursive", serif, sans-serif;
     line-height: 1.7;
     color: rgb(23, 23, 23);
 }
@@ -79,11 +79,15 @@ h1{
     transform: translate(-50%, -25%);
 
     writing-mode: vertical-rl;
+
     color: #ffffff;
-    /* font-family:"Noto Serif JP"; */
-    font-weight: 400;
-    font-size:3rem;
+    font-family:"Zen Old Mincho";
+    font-weight: bold;
+    font-size:4rem;
 }
+
+
+
 .logo-top{
     position: absolute;
     left:2.4rem;
