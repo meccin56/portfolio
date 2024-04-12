@@ -193,6 +193,12 @@ footer nav ul li{
     height: 400px;
     object-fit: cover;
 }
+.img-item{
+    opacity: 0;
+    width:100%;
+    /* aspect-ratio: 4/3; */
+    object-fit: cover;
+}
 /* 減税制度 */
 .tax-content{
     display: flex;

@@ -130,7 +130,7 @@ aside nav ul a:hover{
 .skill-wrappper{
     display: flex;
     justify-content: left;
-    gap:3rem;
+    gap:1rem;
 }
 .skill{
     width: 25%;
