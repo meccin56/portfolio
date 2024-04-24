@@ -295,7 +295,7 @@ header{
 
 
 
-@media screen and (max-width: 600px)  {
+@media (max-width: 400px)  {
     body{
         overflow-x: hidden;
     }
@@ -309,13 +309,13 @@ header{
     }
     
     .wrapper{
-        max-width: 600px;
-        padding:0 6rem;
+        max-width: 400px;
+        padding:0 2rem;
         margin:0 auto;
     }
 
     .message{
-        padding:3rem 0rem;
+        padding:2rem 0rem;
     }
     #main-message1{
         font-size: 2rem;
@@ -326,7 +326,7 @@ header{
 
     .service-wrapper,.voice-wrapper,.office,.branch{
         display: block;
-        max-width: 600px;
+        max-width: 400px;
         /* text-align: center; */
     }
 
