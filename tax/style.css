@@ -127,6 +127,36 @@ h3{
     background-color: #f0f0f0;
     padding:3.875rem 0 6rem;
 }
+/* 会社概要 */
+.section-company{
+    padding:4% 6%;
+}
+.section-company .wrapper{
+    margin-top: 4%;
+}
+.company-line{
+    display: flex;
+    padding:1rem ;
+    gap:2rem;
+    border-bottom:1px solid #43bcff;
+}
+.item{
+    text-align-last: justify;
+    width: 4rem;
+    position:relative;
+}
+.item::after{
+    position: absolute;
+    top:0;
+    left:125%;
+	content: "";
+	width: 1px;
+	height: 2rem;
+	background-color: #c6c6c6;
+}
+.map{
+    margin:6rem 0 6rem;
+}
 
 /* オフィス案内 */
 .office{
@@ -332,5 +362,17 @@ header{
 
     .contact{
         margin-top:4rem;
+    }
+/* 会社概要 */
+    .section-company{
+        max-width: 400px;
+    }
+    
+    .company-line{
+        display: block;
+        max-width: 400px;
+    }
+    .item::after{
+        display: none;
     }
 }
