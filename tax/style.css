@@ -156,7 +156,12 @@ h3{
 }
 .map{
     margin:6rem 0 6rem;
+    width: 500px;
+    height: 500px;
 }
+/* .iframe{
+    width: fit-content;
+} */
 
 /* オフィス案内 */
 .office{
@@ -337,6 +342,14 @@ header{
     .icon{
         display: block;
     }
+    .logo{
+        width: 220px;
+        height: auto;
+    }
+    .footer-logo img{
+        width: 220px;
+        height: auto;
+    }
     
     .wrapper{
         max-width: 400px;
@@ -357,6 +370,7 @@ header{
     .service-wrapper,.voice-wrapper,.office,.branch{
         display: block;
         max-width: 400px;
+        margin: 0 auto;
         /* text-align: center; */
     }
 
@@ -401,7 +415,6 @@ header{
     .section-company{
         max-width: 400px;
     }
-    
     .company-line{
         display: block;
         max-width: 400px;
@@ -409,4 +422,13 @@ header{
     .item::after{
         display: none;
     }
+    .map{
+        margin:6rem 0 6rem;
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+
 }
