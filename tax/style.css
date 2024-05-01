@@ -368,6 +368,9 @@ header{
     .main-message2{
         font-size: 1.1rem;
     }
+    #main-btn{
+        text-align: center;
+    }
 
     .service-wrapper,.voice-wrapper,.office,.branch{
         display: block;
