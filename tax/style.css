@@ -356,22 +356,22 @@ header{
         padding:0 2rem;
         margin:0 auto;
     }
-
+    .main{
+        margin: 0 auto;
+    }
     .message{
-        padding:2rem 0rem;
+        padding:1rem 1rem;
     }
     #main-message1{
         font-size: 2rem;
     }
     .main-message2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .service-wrapper,.voice-wrapper,.office,.branch{
         display: block;
-        max-width: 400px;
         margin: 0 auto;
-        /* text-align: center; */
     }
 
     .service{
@@ -385,6 +385,8 @@ header{
         padding:0;
     }
     .contact{
+        display: block;
+        text-align: center;
         margin-top:4rem;
     }
     .p-30{
@@ -398,10 +400,6 @@ header{
         align-items: center;
         gap:0.4rem;
     }
-    .contact{
-        display: block;
-        text-align: center;
-    }
     .icon-mail{
         width: 60px;
         height: 60px;
@@ -412,8 +410,9 @@ header{
         color:#212121
     }
 /* 会社概要 */
+
     .section-company{
-        max-width: 400px;
+        padding:0;
     }
     .company-line{
         display: block;
