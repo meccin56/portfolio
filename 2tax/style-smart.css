@@ -18,10 +18,9 @@ html {
 }
 
 .smart{
-    width: 360px;
+    width: 400px;
     margin: 0 auto;
-    /* padding:0 1rem; */
-    margin: 0 1rem;
+    padding:0 2rem;
 }
 
 body{
@@ -29,6 +28,7 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.7;
     color: #212121;
+    overflow-x: hidden;
 }
 
 a{
