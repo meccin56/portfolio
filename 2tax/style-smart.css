@@ -18,9 +18,9 @@ html {
 }
 
 .smart{
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
-    padding:0 1rem;
+    /* padding:0 1rem; */
 }
 
 body{
@@ -58,6 +58,38 @@ nav{
 }
 .menu{
     background-color: #43bcff;
+}
+ul{
+    background-color: rgb(255, 255, 255,0.8);
+    position: absolute;
+    top:80px;
+    right: -150px; 
+    width: 150px;
+    padding:2rem 1rem;
+}
+ul.active{
+    background-color: rgb(255, 255, 255,0.8);
+    position: absolute;
+    top:80px;
+    right: 0px; 
+    width: 150px;
+    padding:2rem 1rem;
+    transition: all 0.8s;
+}
+li{
+    list-style: none;
+}
+#hum{
+    display: block;
+}
+#hum.active{
+    display: none;
+}
+#batu{
+    display: none;
+}
+#batu.active{
+    display:block;
 }
 /* main */
 main{
