@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* 共通部分 */
+* {
+    box-sizing: border-box;
+    /* float: none; */
+	/* position: static; */
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+    font-size: 100%;
+    /* scroll-padding-top:100px ; */
+    scroll-behavior: smooth;
+}
+
+.smart{
+    width: 380px;
+    margin: 0 auto;
+    padding:0 1rem;
+}
+
+body{
+    /* font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", 'Noto Sans JP', sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.7;
+    color: #212121;
+}
+
+a{
+    text-decoration: none;
+    color:#212121;
+}
+
+/* main */
+main{
+    background-image: url(img/mv.jpg);
+    background-size: cover;
+}
+main p{
+    color: #ffffff;
+}
+/* フォント */
+    /* サービス */
+h2{
+    font-size: 1.5rem;
+    /* padding-top:3rem; */
+    text-align: center;
+}
+.p-blue{
+    font-size: 0.875rem;
+    color: #0071bc;
+    margin-bottom:3rem;
+    text-align: center;
+}
+.p-18{
+    font-size: 1.125rem;
+    font-weight: 600;
+    /* padding-bottom:1.5rem; */
+}
+.p-14{
+    font-size: 0.875rem;
+}
+
+/* サービス */
+.service{
+    background-color: ffffff;
+    padding:4rem 0;
+}
+.servive-1{
+    margin-bottom:3rem;
+    border:2px solid #43bcff;
+    border-radius: 6px;
+    padding:2rem 1.5rem;
+}
+
+/* お客様の声 */
+.voice{
+    background-color: #f0f0f0;
+    padding:4rem 0;
+}
+.voice-1{
+    margin-bottom:3rem;
+    padding:2rem 1.5rem;
+}
+/* オフィス案内 */
+.office{
+    background-image: url(img/bg_footer.jpg);
+    background-size: cover;
+    padding:4rem 0;
+}
+.office-1{
+    padding:1rem;   
+    background-color: rgb(255, 255, 255,0.5);
+}
+.office-2{
+    padding:1rem;
+    margin:2rem 0;
+    background-color: rgb(255, 255, 255,0.5);
+}
+.office-3{
+    padding:1rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+.office-3:hover{
+    background-color: rgb(255, 255, 255,0.5);
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+.p-30{
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+}
+.p-30 span{
+    font-size: 1.1rem;
+    padding-right: 0.2rem;
+}
+.mail{
+    width: 80px;
+    height: auto;
+}
+.p-24{
+    font-size: 1.2rem;
+}
+/* フッター */
+footer{
+    background-color: #1b5d88;
+    height: 3rem;
+}
+.footer-logo{
+    text-align: right;
+    line-height: 3rem;
+}
+.footer-logo img{
+    height: 18px;
+    width: auto;
+}
