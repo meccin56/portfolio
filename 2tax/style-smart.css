@@ -20,7 +20,9 @@ html {
 .smart{
     width: 360px;
     margin: 0 auto;
-    
+}
+.smart-s{
+    width: 90%;
 }
 
 body{
