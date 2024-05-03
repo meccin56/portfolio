@@ -44,7 +44,7 @@ header{
     height: 80px;
     width: 100%;
     padding:1rem 0;
-    /* background-color: #ff00d0; */
+    background-color: #ffffff;
     position: fixed;
 }
 .header-logo{
