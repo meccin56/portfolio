@@ -1,11 +1,3 @@
-// const heading =document.querySelector('#main-message1');
-
-// const keyframes = {
-//     opacity:[0,1],
-//     translate:['100px 0px',0],
-// };
-// heading.animate(keyframes,800);
-
 const btn=document.querySelector('#main-btn');
 const ugoki={
     opacity:[0,1],
