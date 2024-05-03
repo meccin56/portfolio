@@ -44,24 +44,24 @@ header{
     height: 80px;
     width: 100%;
     padding:1rem 0;
-    background-color: #ff00d0;
+    /* background-color: #ff00d0; */
     position: fixed;
 }
 .header-logo{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .header-logo img{
     height: 40px;
     width: auto;
 }
 nav{
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .menu{
-    background-color: #43bcff;
+    /* background-color: #43bcff; */
 }
 /* ハンバーガーメニュー */
 ul{
@@ -168,6 +168,20 @@ h2{
     font-size: 1rem;
     margin-bottom:0.4rem;
 }
+
+/* 会社概要 */
+.company{
+    padding:100px 0 30px;
+}
+.company-line{
+    border-bottom:1px solid #43bcff;
+    padding:1rem;
+}
+.company-line:last-of-type{
+    border-bottom: none;
+  }
+
+
 /* オフィス案内 */
 .office{
     background-image: url(img/bg_footer.jpg);
