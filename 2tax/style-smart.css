@@ -93,7 +93,7 @@ li{
     display:block;
 }
 /* main */
-main{
+/* main{
     background-image: url(img/mv.jpg);
     background-size: cover;
     padding:100px 0 30px;
@@ -104,8 +104,8 @@ main p{
 }
 .p-18{
     font-size: 1.125rem;
-}
-#main-btn{
+} */
+/* #main-btn{
     color: #ffffff;
     text-align: center;
     font-size: 1.4rem;
@@ -115,6 +115,44 @@ main p{
     width: 80%;
     margin: 0 auto;
     margin-top:1rem;
+}
+#main-btn:hover{
+    background-color: #ffffff;
+    color: #212121;
+    transition: all 0.5s;
+} */
+
+/* メイン */
+main{
+    background-image: url(img/mv.jpg);
+    background-size: cover;
+    height: 31.25rem;
+}
+h4{
+    padding-top:6rem;
+    padding-left: 4.375rem;
+    font-size: 4.375rem;
+    font-weight: normal;
+    color: #ffffff;    
+}
+h3{
+    padding-top:2rem;
+    padding-left: 4.375rem;
+    padding-bottom:2rem;
+    color: #ffffff;  
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+#main-btn{
+    margin-left: 4.375rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: normal;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding:0.6rem;
+    width: 15rem;
+    text-align: center;
 }
 #main-btn:hover{
     background-color: #ffffff;
@@ -137,6 +175,7 @@ h2{
 .servive-1 .p-18{
     font-size: 1.125rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 .p-14{
     font-size: 0.875rem;
@@ -179,7 +218,7 @@ h2{
 
 
 /* オフィス案内 */
-.office{
+/* .office{
     background-image: url(img/bg_footer.jpg);
     background-size: cover;
     padding:4rem 0;
@@ -220,17 +259,15 @@ h2{
 }
 .p-24{
     font-size: 1.2rem;
-}
+} */
 /* フッター */
 footer{
+    height: 80px;
     background-color: #1b5d88;
-    height: 3rem;
 }
 .footer-logo{
-    text-align: right;
-    line-height: 3rem;
-}
-.footer-logo img{
-    height: 18px;
-    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
 }
