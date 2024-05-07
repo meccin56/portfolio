@@ -1,12 +1,3 @@
-const btn=document.querySelector('#main-btn');
-const ugoki={
-    opacity:[0,1],
-    translate:['-160px 0px',0],
-	easing:'ease',
-}
-btn.animate(ugoki,1200);
-
-
 const Menu = document.querySelector('.menu');
 const Hum = document.querySelector('#hum');
 const Batu = document.querySelector('#batu');
@@ -17,6 +8,15 @@ Menu.addEventListener('click',()=>{
 	Batu.classList.toggle('active');
 	Ul.classList.toggle('active');
 });
+
+
+const btn=document.querySelector('#main-btn');
+const ugoki={
+    opacity:[0,1],
+    translate:['-160px 0px',0],
+	easing:'ease',
+}
+btn.animate(ugoki,1200);
 
 
 // const Icon = document.querySelector('.icon');
