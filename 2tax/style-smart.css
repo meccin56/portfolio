@@ -40,6 +40,9 @@ a{
 }
 
 /* ヘッダー */
+.menu-pc{
+    display: none;
+}
 header{
     height: 80px;
     width: 100%;
@@ -47,21 +50,14 @@ header{
     background-color: #ffffff;
     position: fixed;
 }
-.header-logo{
-    /* background-color: aquamarine; */
-}
 .header-logo img{
     height: 40px;
     width: auto;
 }
 nav{
-    /* background-color: beige; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.menu{
-    /* background-color: #43bcff; */
 }
 /* ハンバーガーメニュー */
 ul{
@@ -92,76 +88,71 @@ li{
 #batu.active{
     display:block;
 }
-/* main */
-/* main{
-    background-image: url(img/mv.jpg);
-    background-size: cover;
-    padding:100px 0 30px;
-}
-main p{
-    color: #ffffff;
-    margin-bottom:1rem;
-}
-.p-18{
-    font-size: 1.125rem;
-} */
-/* #main-btn{
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: normal;
-    border: 1px solid #ffffff;
-    padding:0.6rem;
-    width: 80%;
-    margin: 0 auto;
-    margin-top:1rem;
-}
-#main-btn:hover{
-    background-color: #ffffff;
-    color: #212121;
-    transition: all 0.5s;
-} */
 
 /* メイン */
 main{
     background-image: url(img/mv.jpg);
     background-size: cover;
-    height: 31.25rem;
+    /* height: 31.25rem; */
+    height: 22rem;
 }
-h4{
-    padding-top:6rem;
-    padding-left: 4.375rem;
-    font-size: 4.375rem;
+h2{
+    padding-top:100px;
+    padding-bottom:20px;
+    /* padding-left: 4.375rem; */
+    /* font-size: 4.375rem; */
+    font-size:2rem;
     font-weight: normal;
     color: #ffffff;    
 }
 h3{
-    padding-top:2rem;
-    padding-left: 4.375rem;
-    padding-bottom:2rem;
+    /* padding-top:2rem; */
+    /* padding-left: 4.375rem; */
+    padding-bottom:1.5rem;
+    /* padding-bottom:2rem; */
     color: #ffffff;  
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size:1rem;
     font-weight: normal;
 }
-#main-btn{
-    margin-left: 4.375rem;
-    color: #ffffff;
-    font-size: 1.4rem;
-    font-weight: normal;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    padding:0.6rem;
-    width: 15rem;
+#main-btn {
+    /* margin-left: 4.375rem; */
     text-align: center;
+	color: #fff;
+    font-size:1.4rem;
+	display: inline-block;
+	overflow: hidden;
+	padding: 1rem 4rem;
+	position: relative;
+	text-decoration: none;
+    border: 1px solid #ffffff;
+}
+#main-btn::after {
+	animation: 4s 0s shine linear infinite;
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 100%);
+	content: '';
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	transform: skewX(-25deg);
+	width: 50%;
+}
+@keyframes shine {
+	20% {
+		left: 150%;
+	}
+	100% {
+		left: 150%;
+	}
 }
 #main-btn:hover{
-    background-color: #ffffff;
-    color: #212121;
-    transition: all 0.5s;
+    background-color: rgb(255, 254, 254,0.4);
 }
 
+
 /* サービス */
-h2{
+h4{
     font-size: 1.5rem;
     /* padding-top:3rem; */
     text-align: center;
@@ -218,36 +209,41 @@ h2{
 
 
 /* オフィス案内 */
-/* .office{
+.office{
     background-image: url(img/bg_footer.jpg);
     background-size: cover;
-    padding:4rem 0;
+}
+.flex-office{
+    padding:2rem 0;
 }
 .office-1{
-    padding:1rem;   
-    background-color: rgb(255, 255, 255,0.5);
+    margin-bottom: 2rem;
+    padding:0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
 }
 .office-2{
-    padding:1rem;
-    margin:2rem 0;
-    background-color: rgb(255, 255, 255,0.5);
-}
-.office-3{
-    padding:1rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:0.5rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
-.office-3:hover{
+.office-2:hover{
     background-color: rgb(255, 255, 255,0.5);
     transition: all 0.5s;
 }
+.p-office{
+    border: 2px solid #0071bc;
+    border-radius: 18px;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+}
 .p-30{
-    font-size: 1.2rem;
-    display: inline-flex;
-    align-items: center;
+    font-size:1.2rem;
 }
 .p-30 span{
     font-size: 1.1rem;
@@ -259,7 +255,7 @@ h2{
 }
 .p-24{
     font-size: 1.2rem;
-} */
+} 
 /* フッター */
 footer{
     height: 80px;

@@ -10,13 +10,13 @@ Menu.addEventListener('click',()=>{
 });
 
 
-const btn=document.querySelector('#main-btn');
-const ugoki={
-    opacity:[0,1],
-    translate:['-160px 0px',0],
-	easing:'ease',
-}
-btn.animate(ugoki,1200);
+// const btn=document.querySelector('#main-btn');
+// const ugoki={
+//     opacity:[0,1],
+//     translate:['-160px 0px',0],
+// 	easing:'ease',
+// }
+// btn.animate(ugoki,1200);
 
 
 // const Icon = document.querySelector('.icon');
