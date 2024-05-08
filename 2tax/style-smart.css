@@ -66,11 +66,12 @@ ul{
     top:80px;
     right: -120px; 
     width: 120px;
-    padding:2rem 0;    
+    padding:2rem 0;
 }
 ul.active{
     right: 0px; 
-    transition: all 0.8s;
+    transition: all 0.5s;
+
 }
 li{
     list-style: none;
@@ -78,6 +79,8 @@ li{
     line-height: 2.6rem;
     border-bottom:0.9px solid #0d0d0d;
     margin:0 10px;
+    
+    
 }
 li:nth-child(5) {
     border-bottom:none;
@@ -85,6 +88,8 @@ li:nth-child(5) {
 li:hover{
     background-color: #ffffff;
     transition: all 0.8s;
+    
+    
 }
 #hum{
     display: block;
@@ -145,7 +150,7 @@ h3{
 	left: -100%;
 	position: absolute;
 	top: 0;
-	transform: skewX(-25deg);
+	transform: skewX(-45deg);
 	width: 50%;
 }
 @keyframes shine {
