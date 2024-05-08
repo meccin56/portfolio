@@ -113,17 +113,44 @@ h3{
 #main-btn:hover{
     background-color: rgb(255, 254, 254,0.4);
 }
-
-
-
-
-
-
-/* #main-btn:hover{
-    background-color: #ffffff;
-    color: #212121;
-    transition: all 0.5s;
-} */
+/* 会社概要 */
+.company{
+    padding:120px 0 60px;
+}
+.company-line{
+    display: flex;
+    padding:1rem ;
+    gap:2rem;
+    border-bottom:1px solid #43bcff;
+}
+.company-line-none{
+    border-bottom: none;
+}
+.company-1{
+    margin:0 auto;
+    text-align: center;
+    width: 80%;
+}
+.company-img{
+    padding:2rem 0 4rem;
+}
+.item{
+    text-align-last: justify;
+    width: 4rem;
+    position:relative;
+}
+.item::after{
+    position: absolute;
+    top:0;
+    left:125%;
+	content: "";
+	width: 1px;
+	height: 2rem;
+	background-color: #c6c6c6;
+}
+.map{
+    padding-top:1rem;
+}
 
 /* PCオフィス */
 .office{
@@ -142,6 +169,9 @@ h3{
     flex-direction:row ;
     gap:40px;
     padding-left: 50px;
+}
+.office-3{
+    text-align: left;
 }
 
 .p-office{

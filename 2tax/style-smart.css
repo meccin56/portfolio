@@ -66,7 +66,7 @@ ul{
     top:80px;
     right: -120px; 
     width: 120px;
-    padding:1rem 1rem;    
+    padding:2rem 0;    
 }
 ul.active{
     right: 0px; 
@@ -74,7 +74,17 @@ ul.active{
 }
 li{
     list-style: none;
-    line-height: 2rem;
+    text-align: center;
+    line-height: 2.6rem;
+    border-bottom:0.9px solid #0d0d0d;
+    margin:0 10px;
+}
+li:nth-child(5) {
+    border-bottom:none;
+  }
+li:hover{
+    background-color: #ffffff;
+    transition: all 0.8s;
 }
 #hum{
     display: block;
@@ -181,6 +191,9 @@ h4{
     border-radius: 6px;
     padding:1rem 1.5rem;
 }
+#service{
+    padding-top:3rem;
+}
 
 /* お客様の声 */
 .voice{
@@ -197,16 +210,48 @@ h4{
 
 /* 会社概要 */
 .company{
-    padding:100px 0 30px;
+    padding:120px 0 60px;
 }
 .company-line{
+    display: flex;
+    padding:1rem ;
+    gap:2rem;
     border-bottom:1px solid #43bcff;
-    padding:1rem;
 }
-.company-line:last-of-type{
+.company-line-none{
     border-bottom: none;
-  }
-
+}
+.company-flex-colum{
+    flex-direction: column;
+}
+.company-1{
+    /* margin:0 auto;
+    text-align: center;
+    width: 100%; */
+}
+.company-img{
+    padding:2rem 0 4rem;
+}
+.item{
+    text-align-last: justify;
+    width: 4rem;
+    position:relative;
+}
+.item::after{
+    position: absolute;
+    top:0;
+    left:125%;
+	content: "";
+	width: 1px;
+	height: 2rem;
+	background-color: #c6c6c6;
+}
+.map iframe{
+    padding-top:1rem;
+    width: 300px;
+    height: 300px;
+    
+}
 
 /* オフィス案内 */
 .office{
@@ -214,15 +259,15 @@ h4{
     background-size: cover;
 }
 .flex-office{
-    padding:2rem 0;
+    padding:2.5rem 0;
 }
 .office-1{
     margin-bottom: 2rem;
-    padding:0 2rem;
+    padding:0 2.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
+    gap:2.5rem;
 }
 .office-2{
     background-color: rgb(255, 255, 255);
