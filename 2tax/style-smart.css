@@ -67,6 +67,8 @@ ul{
     right: -120px; 
     width: 120px;
     padding:2rem 0;
+    opacity: 1;
+    z-index: 999;
 }
 ul.active{
     right: 0px; 
@@ -74,13 +76,13 @@ ul.active{
 
 }
 li{
+    display: block;
+    cursor: pointer;
     list-style: none;
     text-align: center;
     line-height: 2.6rem;
     border-bottom:0.9px solid #0d0d0d;
     margin:0 10px;
-    
-    
 }
 li:nth-child(5) {
     border-bottom:none;
@@ -88,8 +90,6 @@ li:nth-child(5) {
 li:hover{
     background-color: #ffffff;
     transition: all 0.8s;
-    
-    
 }
 #hum{
     display: block;
@@ -164,7 +164,6 @@ h3{
 #main-btn:hover{
     background-color: rgb(255, 254, 254,0.4);
 }
-
 
 /* サービス */
 h4{
