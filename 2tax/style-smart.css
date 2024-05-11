@@ -53,6 +53,7 @@ header{
 .header-logo img{
     height: 40px;
     width: auto;
+    text-align: left;
 }
 nav{
     display: flex;
@@ -67,7 +68,8 @@ ul{
     right: -120px; 
     width: 120px;
     padding:2rem 0;
-    opacity: 1;
+    /* opacity: 1;
+    transform:none; */
     z-index: 999;
 }
 ul.active{
@@ -84,9 +86,6 @@ li{
     border-bottom:0.9px solid #0d0d0d;
     margin:0 10px;
 }
-li:nth-child(5) {
-    border-bottom:none;
-  }
 li:hover{
     background-color: #ffffff;
     transition: all 0.8s;
@@ -228,11 +227,7 @@ h4{
 .company-flex-colum{
     flex-direction: column;
 }
-.company-1{
-    /* margin:0 auto;
-    text-align: center;
-    width: 100%; */
-}
+
 .company-img{
     padding:2rem 0 4rem;
 }

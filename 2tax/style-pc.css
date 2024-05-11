@@ -126,6 +126,9 @@ h3{
 .company-line-none{
     border-bottom: none;
 }
+.company-flex-colum{
+    flex-direction: row;
+}
 .company-1{
     margin:0 auto;
     text-align: center;
@@ -148,8 +151,12 @@ h3{
 	height: 2rem;
 	background-color: #c6c6c6;
 }
-.map{
+
+.map iframe{
     padding-top:1rem;
+    width: 600px;
+    height: 600px;
+    
 }
 
 /* PCオフィス */
