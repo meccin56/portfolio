@@ -21,6 +21,9 @@
 .menu-pc p:hover{
     border-bottom: 1px solid #0071bc;
 }
+nav{
+    justify-content: space-between;
+}
 /* スマホメニュー */
 .menu{
     display: none;

@@ -10,6 +10,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+html,body {
+    overflow-x: hidden;
+  }
 
 html {
     font-size: 100%;
@@ -57,7 +60,8 @@ header{
 nav{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    gap:2rem;
+    /* justify-content: space-between; */
     align-items: center;
 }
 /* ハンバーガーメニュー */
