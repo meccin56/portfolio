@@ -61,7 +61,7 @@ nav{
     width: 100%;
     display: flex;
     gap:2rem;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
 }
 /* ハンバーガーメニュー */
