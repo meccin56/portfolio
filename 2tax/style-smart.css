@@ -30,7 +30,7 @@ html {
 }
 
 body{
-    font-family: "Hiragino Kaku Gothic ProN", 'Noto Sans JP', sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
     line-height: 1.7;
     color: #212121;
     overflow-x: hidden;
