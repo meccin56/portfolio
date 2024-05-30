@@ -122,6 +122,16 @@ aside nav ul a:hover{
     background-color: #222136;
     color:#ffffff
 }
+.yohaku4{
+    padding-bottom:4rem;
+}
+.yohaku1{
+    padding-bottom:1rem;
+}
+.tax-flex{
+    display: flex;
+    gap:3rem;
+}
 
 /*    --------- スキル・自己紹介 ---------    */
 .profile img{
