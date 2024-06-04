@@ -227,7 +227,14 @@ aside nav ul a:hover{
     .now-left{
         width: 100%;
     }
-
+    /*    --------- バナー ---------    */
+    .tax-flex{
+        flex-direction: column;
+    }
+    .tax-flex,.img-frame{
+        max-width: 80%;
+        height: auto;
+    }
     /*    --------- iframe読込みyoutube ---------    */
     /*    --------- iframe読込みお問合せ ---------    */
     iframe{
