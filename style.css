@@ -90,7 +90,6 @@ header{
     margin-bottom:4rem;
 }
 .banner img{
-    display: inline-block;
     width: 58%;
 }
 .banner p{
@@ -170,41 +169,82 @@ gap:2rem;
 }
 
 
-/* @media (max-width: 380px) {
+  /*    --------- スマホ ---------    */
+@media (max-width: 600px) {
 
-    header,footer,article,section .wrapper{
-        max-width: 380px;
+    header,footer,section,article,aside,.page{
+        width: 380px;
         margin:0 auto;
-        padding:2%;
     }
-    .header-pc{
-        display: none;
+
+    .page{
+        display: block;
     }
-    aside{
-        display: none;
+
+    /*    --------- バナー ---------    */
+    .banner{
+        display: block;
+        gap:1rem;
+        margin-bottom:4rem;
     }
-    article{
+    .banner img{
+        width: 100%;
+    }
+    .banner p{
         width: 100%;
     }
 
-
-
-
-    .skill p{
-        font-size:1.2rem;
-        border-bottom: 1px dashed rgb(204, 204, 204);
-        margin-bottom:0.8rem;
+    /*    --------- webサイト ---------    */
+    .wood{
+        display: block;
     }
-    .skill{
-        margin-bottom: 2rem;
+    .wood-img img{
+        width: 300px;
+        height: auto;
+    }
+    .tax-s{
+        width: 180px;
+        height: auto;
+    }
+    .tax-pc{
+        width: 360px;
+        height: auto;
+    }
+    .tax{
+        display: block;
+    }
+    /*    --------- 現在 ---------    */
+    .now{
+        display: block;    
+    }
+    .now-left{
+        width: 100%;
+    }
+    /*    --------- 仕事歴 ---------    */
+    .management{
+        display: block;
+    }
+    .manage-left{
+        width: 100%;
+    }
+    .youtube iframe{
+        width: 100%;
+        height: 100;
+    }
+    .yamato{
+        width: 100%;
+        height: atuo;
+    }
+    
+    /*    --------- お問合せ ---------    */
+    .contact iframe{
+    width: 100%;
     }
 
-    .profile img{
-        margin:0 0 1rem 1rem;
-    }
+    
 
 
-    .header-m{
+    /* .header-m{
         display: block;
         text-align: center;
     }
@@ -233,8 +273,9 @@ gap:2rem;
         position: absolute;
         left: 0;
         top:0;
-    }
-} */
+    } */
+
+}
 
 
 
