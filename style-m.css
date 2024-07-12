@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/*    --------- 共通 ---------    */
+html {
+    font-size: 100%;
+}
+
+body{
+    font-family:  "Klee One","Noto Serif JP", "Noto Sans JP",  "cursive", serif, sans-serif;
+    line-height: 1.7;
+    color: rgb(23, 23, 23);
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.page{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+article{
+    width: 74%;
+}
+aside{
+    padding-top:0.5rem;
+    width: 16%;
+}
+section{
+    padding-bottom:6rem;
+}
+li{
+    list-style: none;
+}
+h2{
+    padding-bottom: 1rem;
+    /* background-color: antiquewhite; */
+}
+h3{
+    border-bottom: 1px solid rgb(204, 204, 204,0.6);
+    margin: 0 0 1.6rem;
+    /* background-color: #a12c32 */
+}
+/*    --------- aside ---------    */
+aside li{
+    border-bottom: 1px solid rgb(204, 204, 204,0.6);
+    margin-bottom:1.4rem;
+}
+aside nav ul a{
+    display: block;
+}
+aside nav ul a:hover{
+    background-color:rgb(204, 204, 204,0.3) ;
+}
+
+/*    --------- フッター ---------    */
+footer p{
+    text-align: center;
+}
+footer{
+    padding:2rem 0 2rem 0;
+    /* background-color: #f8e72b; */
+}
+/*    --------- ヘッダー ---------    */
+header{
+    width: 1000px;
+    padding:2rem 0 2rem 0;
+    text-align: left;
+    margin: auto;
+    /* background-color: #2bf898 */
+}
+
+/*    --------- 自己紹介スキル ---------    */
+.skill{
+    padding-bottom:1.4rem;
+}
+.skill p{
+    border-bottom: 1px dashed rgb(204, 204, 204);
+    margin-bottom:1rem;
+    font-size:1.2rem;
+}
+/*    --------- バナー ---------    */
+.banner{
+    display: flex;
+    gap:1rem;
+    margin-bottom:4rem;
+}
+.banner img{
+    display: inline-block;
+    width: 58%;
+}
+.banner p{
+    width: 34%;
+}
+
+/*    --------- webサイト ---------    */
+.white{
+    padding:0 0.8rem 0 0;
+    border: 1px solid rgb(204, 204, 204,0.6);
+    background-color: #ffffff;
+}
+.gold{
+    padding:0 0.5rem;
+    background: linear-gradient(270deg, #c9ab1b, #f8e72b);
+}
+.navy{
+    padding:0 0.5rem;
+    background-color: #222136;
+    color:#ffffff
+}
+.img-frame{
+    border: 1px solid rgb(204, 204, 204,0.6);
+}
+.wood{
+    display: flex;
+    gap:1rem;
+}
+.tax-s{
+    width: auto;
+    height: 300px;
+}
+.tax-pc{
+    width: auto;
+    height: 300px;
+}
+.tax{
+    display: flex;
+    gap:2rem;
+}
+.click{
+    border: 1px solid rgb(204, 204, 204,0.6);
+    background-color:rgb(204, 204, 204,0.3) ;
+    padding:0 0.5rem;
+}
+
+.click:hover{
+    background-color:rgb(255, 255, 255) ;
+}
+
+/*    --------- LP ---------    */
+.lp{
+display: flex;
+gap:2rem;
+}
+.lp img{
+    width: 30%;
+    height: auto;
+}
+
+/*    --------- 仕事歴 ---------    */
+.management{
+    display: flex;
+    padding-bottom:2rem;
+}
+.manage-left{
+    width: 14%;
+}
+
+/*    --------- 現在 ---------    */
+.now{
+    display: flex;
+    padding-bottom:2rem;
+}
+.now-left{
+    width: 20%;
+}
+
+
+/* @media (max-width: 380px) {
+
+    header,footer,article,section .wrapper{
+        max-width: 380px;
+        margin:0 auto;
+        padding:2%;
+    }
+    .header-pc{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    article{
+        width: 100%;
+    }
+
+
+
+
+    .skill p{
+        font-size:1.2rem;
+        border-bottom: 1px dashed rgb(204, 204, 204);
+        margin-bottom:0.8rem;
+    }
+    .skill{
+        margin-bottom: 2rem;
+    }
+
+    .profile img{
+        margin:0 0 1rem 1rem;
+    }
+
+
+    .header-m{
+        display: block;
+        text-align: center;
+    }
+    header a{
+        display: block;
+    }
+    #hum{
+        display: block;
+
+    }
+    #hum.avtive{
+        display: none;
+    }
+    #batu{
+        display: none;
+    }
+    #batu.active{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        left: -380px;
+        top:0
+    }
+    ul.active{
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+} */
+
+
+
+
+
