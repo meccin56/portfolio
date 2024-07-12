@@ -8,30 +8,34 @@
 
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="style-m.css" rel="stylesheet">
 </head>
+
 <body>
 <header>
-    <a href="index.html"><p>WebデザイナーMegumi.N　ポートフォリオ</p></a>
-    <a href="contact.html"><p>お問合せ</p></a>
+    <div>
+        <a href="index.html"><p>Megumi.N　ポートフォリオ</p></a>
+    </div>
 </header>
 
-<div class="wrapper">
+<div class="page">
 <article>
+    <h2>LP</h2>
     <section>
-        <h2>LP</h2>
-        <p>背景やボタン、付箋などの装飾は全てcssで実装しています。<br>
-        他社と差別化を図るため、ライティングで、ママに親身に向き合うスクールの姿勢を訴求しました。</p>
-        <br>
-        <p><a href="lp/index.html" target="_blank"><デモサイトを見る></a></p>
-        <br>
-        <img class="img-frame" src="img/lp.jpg" alt="webデザインスクールのlp">
+        <div class="lp">
+            <img class="img-frame" src="img/lp.jpg" alt="webデザインスクールのlp">
+            <p>
+            背景やボタン、付箋などの装飾は、画像を使わず全てcssで実装しています。<br>
+            他社と差別化を図るため、ライティングで、ママに親身に向き合うスクールの姿勢を訴求しました。
+            <br><br>
+            <a href="lp/index.html" target="_blank">デモサイトを見る→</a>
+            </p>
+        </div>
     </section>
 </article>
+
 <aside>
     <nav>
     <ul>
@@ -47,11 +51,10 @@
     </ul>
     </nav>
 </aside>
-
-</div>　<!-- wrapper終わり -->
+</div><!-- page終わり -->
 
 <footer>
-    <p class="p-center"><small>&copy; 2023 megumi lab</small></p>
+    <p><small>&copy; 2023 megumi lab</small></p>
 </footer>
     
 </body>

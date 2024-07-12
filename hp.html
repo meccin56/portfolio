@@ -8,46 +8,52 @@
 
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="style-m.css" rel="stylesheet">
 </head>
+
 <body>
 <header>
-    <a href="index.html"><p>WebデザイナーMegumi.N　ポートフォリオ</p></a>
-    <a href="contact.html"><p>お問合せ</p></a>
+    <div>
+        <a href="index.html"><p>Megumi.N　ポートフォリオ</p></a>
+    </div>
 </header>
 
-<div class="wrapper">
-<article>
-    <section>
+<div class="page">
+    <article>
         <h2>webサイト</h2>
-        <p class="yohaku1"></p>
-        <h3>ハウスメーカー</h3>
-        <p>
-            <span class="white">メインカラー</span>　
-            <span class="navy">コンバージョンカラー</span>　
-            <span class="gold">アクセントカラー</span>　で落ち着いた高級感を訴求
-        </p>
-        <br>
-        <p><a href="kinoie/index.html"  target="_new" rel="noopener"><デモサイトを見る></a></p>
 
-        <img class="img-frame" src="img/woodhouse.jpg" alt="本物の木の家ホームページデザイン">
-        <p class="yohaku4"></p>
-        
-        <h3>税理士事務所</h3>
-        <p>モバイルサイトに対応。<br>
-            デザイン案をベースにコーディングを担当、ハンバーガーメニューはJavaScriptで実装し、コンバージョンボタンはcssで動きをつけました。</p><br>
-        <p><a href="tax/index.html"  target="_new" rel="noopener"><デモサイトを見る></a></p>
-        <div class="tax-flex">
-        <img class="img-frame" src="img/tax.jpg" alt="税理士事務所ホームページデザイン">
-        <img class="img-frame" src="img/tax-s.jpg" alt="税理士事務所ホームページデザイン">
-        </div>
-    </section>
-    
+        <section>
+            <h3>ハウスメーカー</h3>
+            
+            <div class="wood">
+                <div class="wood-img">
+                    <img class="img-frame" src="img/woodhouse.jpg" alt="本物の木の家ホームページデザイン">
+                </div>
+                <p>
+                <span class="white"></span>　メインカラー<br>
+                <span class="navy"></span>　コンバージョンカラー<br>
+                <span class="gold"></span>　アクセントカラー<br>
+                を用いて落ち着いた高級感を訴求<br><br>
+                <a class="click" href="kinoie/index.html"  target="_new" rel="noopener">デモサイトを見る→</a>
+                </p> 
+            </div>
+        </section>
 
+        <section>
+            <h3>税理士事務所</h3>
+            <div class="tax">
+                <img class="tax-s" src="img/tax-s.png" alt="税理士事務所ホームページデザイン">
+                <img class="tax-pc" src="img/tax-pc.png" alt="税理士事務所ホームページデザイン">
+            </div>
+            <br><br>
+            <p>モバイルサイトに対応。<br>
+            デザイン案をベースにコーディングを担当、ハンバーガーメニューはJavaScriptで実装し、<br>
+            コンバージョンボタンはcssで動きをつけました。</p>
+            <br>
+            <p><a class="click" href="tax/index.html"  target="_new" rel="noopener">デモサイトを見る→</a></p>
+        </section>
 </article>
 <aside>
     <nav>
@@ -64,11 +70,10 @@
     </ul>
     </nav>
 </aside>
-
-</div>　<!-- wrapper終わり -->
+</div><!-- page終わり -->
 
 <footer>
-    <p class="p-center"><small>&copy; 2023 megumi lab</small></p>
+    <p><small>&copy; 2023 megumi lab</small></p>
 </footer>
     
 </body>
