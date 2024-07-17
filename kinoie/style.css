@@ -14,8 +14,9 @@ a {
     color:inherit;
 }
 nav ul li:hover {
-    background-color: rgb(255, 255, 255, 0.2);
-    transition: background-color 0.6s;
+    /* background-color: rgb(255, 255, 255, 0.2);
+    transition: background-color 0.6s; */
+    border-bottom: 1px solid #ffffff;
 }
 img {
     max-width: 100%;
@@ -128,13 +129,12 @@ header nav ul li{
     height: 12px;
     width: auto;
 }
-
-
-
-
-
 .yoyaku{
     border: 1px solid #ffffff;
+}
+.yoyaku:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    transition: background-color 0.6s;
 }
 /* 国産木の魅力 */
 .consept{    
