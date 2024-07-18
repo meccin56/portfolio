@@ -169,8 +169,75 @@ gap:2rem;
 }
 
 
-  /*    --------- スマホ ---------    */
+/*    --------- レスポンシブのメニュー---------    */
+.sheader{
+    display: none;
+}
+.pcheader{
+    display: block;
+}
+
+
+
+
+/*    --------- スマホ ---------    */
 @media (max-width: 600px) {
+    /*    --------- レスポンシブのメニュー---------    */
+    .sheader{
+        display: block;
+    }
+    .pcheader{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .sheaderf{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sul{
+        background-color: rgb(255, 255, 255,0.8);
+        position: absolute;
+        /* top:80px; */
+        right: -150px; 
+        width: 150px;
+        padding:2rem 0;
+        opacity: 1;
+        z-index: 999;
+    }
+    .sul.active{
+        right: 0px; 
+        transition: all 0.5s;
+        position: absolute;
+        z-index: 999;
+    }
+    .sli{
+        display: block;
+        cursor: pointer;
+        list-style: none;
+        /* text-align: center; */
+        line-height: 2.6rem;
+        border-bottom:0.9px solid #0d0d0d;
+        margin:0 10px;
+    }
+    .sli:hover{
+        background-color: #ffffff;
+        transition: all 0.8s;
+    }
+    #hum{
+        display: block;
+    }
+    #hum.active{
+        display: none;
+    }
+    #batu{
+        display: none;
+    }
+    #batu.active{
+        display:block;
+    }
 
     header,footer,section,article,aside,.page{
         width: 380px;
@@ -181,6 +248,8 @@ gap:2rem;
     .page{
         display: block;
     }
+
+    
 
     /*    --------- バナー ---------    */
     .banner{
@@ -241,41 +310,6 @@ gap:2rem;
     .contact iframe{
     width: 100%;
     }
-
-    
-
-
-    /* .header-m{
-        display: block;
-        text-align: center;
-    }
-    header a{
-        display: block;
-    }
-    #hum{
-        display: block;
-
-    }
-    #hum.avtive{
-        display: none;
-    }
-    #batu{
-        display: none;
-    }
-    #batu.active{
-        display: block;
-    }
-    ul{
-        position: absolute;
-        left: -380px;
-        top:0
-    }
-    ul.active{
-        position: absolute;
-        left: 0;
-        top:0;
-    } */
-
 }
 
 

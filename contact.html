@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>megumi lab</title>
-    <meta name="description" content="webデザイン、wordpress運用、SNS運用、コーディング、seoライティングなど、ホームーページ運用をサポート">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>megumi lab</title>
+        <meta name="description" content="webデザイン、wordpress運用、SNS運用、コーディング、seoライティングなど、ホームーページ運用をサポート">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="style.css" rel="stylesheet">
+    
+    
+        <!-- フォントの読み込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+        
+        <!-- googeアイコン読み込み -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+        <!-- JavaScriptの読み込み -->
+        <script src="script.js" defer></script>
+    
+    </head>
 <body>
 <header>
-    <div>
+    <!-- PCヘッダー -->
+    <div class="pcheader">
         <a href="index.html"><p>Megumi.N　ポートフォリオ</p></a>
     </div>
+
+    <!-- スマホヘッダー -->
+    <div class="sheader">
+        <div class="sheaderf">
+            <div>
+                <a href="index.html"><p>Megumi.N　ポートフォリオ</p></a>
+            </div>
+            <!-- ハンバーガーアイコン -->
+            <div class="menu">
+                <span id="hum" class="material-symbols-outlined">menu</span>
+                <span id="batu" class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+        <!-- スマホナビ -->
+        <ul class="sul">
+            <a href="index.html"><li class="sli">スキル・自己紹介</li></a>
+            <a href="banner.html"><li class="sli">バナー</li></a>
+            <a href="hp.html"><li class="sli">webサイト</li></a>
+            <a href="lp.html"><li class="sli">LP</li></a>                  
+            <a href="flyer.html"><li class="sli">チラシ</li></a>
+            <a href="works.html"><li class="sli">Works・職歴</li></a>
+            <a href="now.html"><li class="sli">現在の仕事状況</li></a>
+            <a href="price.html"><li class="sli">価格</li></a>
+            <a href="contact.html"><li class="sli">お問合わせ</li></a>
+        </ul>
+    </div><!-- スマホヘッダー終わり -->
 </header>
 
 <div class="page">
