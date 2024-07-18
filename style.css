@@ -238,11 +238,12 @@ gap:2rem;
     #batu.active{
         display:block;
     }
-
+    body{
+        width: 380px;
+    }
     header,footer,section,article,aside,.page{
-        width: 360px;
+        width: 90%;
         margin:0 auto;
-        padding:0 5px;
     }
 
     .page{
