@@ -240,9 +240,8 @@ gap:2rem;
     }
 
     header,footer,section,article,aside,.page{
-        width: 380px;
+        width: 360px;
         margin:0 auto;
-        padding:3%;
     }
 
     .page{
