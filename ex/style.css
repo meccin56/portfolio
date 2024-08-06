@@ -1,0 +1,493 @@
+@charset "UTF-8";
+/*    --------- 共通 ---------    */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body{
+    /* font-family:  "Klee One","Noto Serif JP", "Noto Sans JP",  "cursive", serif, sans-serif; */
+    /* font-size: 16px;
+    line-height: 1.6rem; */
+    /* overflow-x: hidden; */
+    color: #404040;
+}
+
+/*    ---------テキスト---------    */
+p, li{
+    letter-spacing: .2em;
+}
+.p-more{
+    color:#ffaa44;
+}
+.p-center{
+    text-align: center;
+}
+.p-link{
+    padding:0.8rem;
+    letter-spacing: 3.2px;
+}
+.p-link2{
+    padding:0.8rem 0;
+    letter-spacing: 3.2px;
+}
+.p-small{
+    font-size:smaller;
+    color: #8c8c8c;
+    letter-spacing: .2em;
+}
+.p-small2{
+    font-size: x-small;
+    color: #8c8c8c;
+    letter-spacing: .2em;
+}
+.p-small3{
+    font-size: smaller;
+    color: #ffaa44;
+    letter-spacing: .2em;
+}
+h3{
+    text-align: center;
+    color:#404040;
+    font-size: 20px;
+    letter-spacing: .2em;
+    margin-bottom:4rem;
+}
+h4{
+    color:#404040;
+    letter-spacing: .2em;
+    margin-bottom:0.4rem;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/*    ---------大枠---------    */
+header,section,footer{
+    width: 1082px;
+    margin: 0 auto;
+}
+section{
+    margin-bottom:16rem;
+}
+
+
+/*    ---------画像---------    */
+img{
+    max-width: 100%;
+    height: auto;
+}
+.img-frame{
+    border-radius: 8px;
+}
+
+/*    ---------ボタン---------    */
+.orange{
+    width: 400px;
+    background-color: #ffaa33;
+    color:#ffffff;
+    padding:16px;
+    border-radius: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:1rem;
+    letter-spacing: .2em;
+}
+.orange:hover{
+    opacity: 0.8;
+}
+/*    ---------ヘッダー ---------    */
+header{
+    padding:1.7rem 0 3.4rem;
+    color: #8c8c8c;
+}
+.snav{
+    display: none;
+}
+ul{
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1.4rem;
+}
+.pnav{
+    display: flex;
+    justify-content: flex-end;
+    gap:2rem;
+}
+.pnav li{
+    font-size: smaller;
+}
+.nav2{
+    display: flex;
+    gap:1.6rem;
+    justify-content: flex-start;
+}
+li{
+    list-style: none;
+}
+.logo{
+    width: 106px;
+    height: auto;
+}
+/*    --------- スマホで表示するハンバーガーメニュー ---------    */
+.menu{
+    display: none;
+}
+.snav{
+    display: none;
+}
+/*    --------- メインビジュアル ---------    */
+.main-pc{
+    text-align: center;
+}
+.main-mobile{
+    display: none;
+}
+
+/*    --------- フレックスレイアウト ---------    */
+.support{
+    display: flex;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.skill{
+    width: 30%;
+}
+.skill img{
+    width: 236px;
+    height: auto;
+    margin:auto;
+    display: block;
+}
+
+.skills2{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+.skill2{
+    width: 30%;
+}
+.skills3{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    gap:4rem;
+}
+
+/*    --------- テレビCM ---------    */
+.tv{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+.tv-right{
+    width: 58%;
+}   
+.tv-left iframe{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.yohaku1{
+    padding-bottom:2rem;
+}
+
+/*    --------- 講師陣 ---------    */
+.teachers{
+    display: flex;
+    justify-content: space-between;
+}
+.teacher{
+    width: 15%;
+}
+
+.web-designer{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+/*    --------- そのこだわりがしごとになる---------    */
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    gap:4%;
+}
+.flex-left, .flex-right{
+    width: 49%;
+}
+.flex-left2{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:5%;
+}
+/*    --------- ---------    */
+.after{
+    display: flex;
+    justify-content: flex-start;
+}
+.after1{
+    width: 100px;
+}
+.after1 img{
+    max-width: 80px;
+    height: auto;
+}
+.grid1{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;/ */
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+}
+.support{
+    display: flex;
+    justify-content: flex-start;
+    gap:1rem;
+}
+.support1{
+    width: 120px;
+}
+.support1 img{
+    max-width: 118px;
+    height: auto;
+}
+.support2{
+    margin: auto;
+}
+
+.mama{
+    display: flex;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+.mama1{
+    max-width: 30%;
+}
+.flex-right-right{
+    display: flex;
+    gap:0.5rem;
+    margin-bottom:1rem;
+}
+.flex-right-right img{
+    max-width: 57px;
+}
+
+.flex-tate-center{
+    align-content: center;
+}
+
+/*    --------- Fammの人気商品---------    */
+.products{
+    display: flex;
+    justify-content: space-around;
+}
+.product{
+    max-width: 117px;
+    height: auto;
+}
+.line{
+    text-decoration:line-through;
+    color:#404040;
+}
+
+
+.img-center{
+    text-align: center;
+}
+/*    --------- フッター　---------    */
+footer{
+    padding-bottom:4rem;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+.footer-li{
+    color: #ffaa44;
+}
+footer p{
+    text-align: center;
+    margin-top:2rem;
+}
+
+@media (max-width: 600px) {
+    /*    --------- レスポンシブのメニュー---------    */
+
+/*    ---------大枠---------    */
+header,section,footer{
+    width: 370px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin:0 auto;
+}
+section{
+    margin-bottom:8rem;
+}
+body{
+    padding:0 2rem;
+}
+
+
+/*    ---------ヘッダー ---------    */
+.logo{
+    width: 80px;
+}
+.pnav{
+    display: none;
+}
+.snav{
+display: block;
+background-color: 	#F0F0F0;
+position: absolute;
+top:0px;
+left: -340px; 
+width: 340px;
+height: 100vh;
+padding:4rem 2rem;
+opacity: 1;
+z-index: 999;
+flex-direction: column;
+justify-content: space-between;
+gap:2rem;
+}
+.snav li:not(:last-child){
+    padding-bottom:3rem;
+}
+.snav li{
+    font-size: larger;
+}
+.snav.active{
+    left: 0px; 
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 999;
+}
+.nav2{
+    overflow-x: visible;
+    white-space: nowrap;
+
+    /* display: flex; */
+    /* gap:2rem; */
+    /* justify-content: flex-start; */
+    /* overflow: visible; */
+}
+.nav2 li{
+    display: inline-block;
+    width: 90%;
+}
+
+/*    --------- スマホで表示するハンバーガーアイコン ---------    */
+.menu{
+    display: block;
+}
+#hum{
+    display: block;
+}
+#hum.active{
+    display: none;
+}
+#batu{
+    display: none;
+}
+#batu.active{
+    display:block;
+}
+
+
+
+
+/*    --------- フレックスレイアウト ---------    */
+.flex2, .skills, .skills2, .skills3, .tv, .teachers, .web-designer, .after, .support, .mama, .products{
+    display: block;
+    margin:0 auto;
+}
+.flex-left, .flex-right, .flex-left2, .skill, .skill2, .skill3, .tv-left, .tv-right, .product {
+    width: 90%;
+    margin:0 auto;
+    margin-bottom:4rem;
+}
+.mama:not(:last-of-type){
+   padding-bottom:4rem;
+} 
+.skill3{
+    margin-bottom:4rem;
+}
+.tv-right, .tv-left{
+    margin-bottom:4rem;
+}
+/*    --------- 講師陣 ---------    */
+.teacher{
+    text-align: center;
+    width: 90%;
+}
+.teacher img{
+    width: 70%;
+}
+.teacher:not(:last-child){
+    margin-bottom:3rem;
+} 
+
+
+/*    --------- グリッドレイアウト ---------    */
+.grid1{
+    display: block;
+}
+.grid-item{
+    margin-bottom:4rem;
+}
+/*    --------- メインビジュアル ---------    */
+.main-pc{
+    display: none;
+}
+.main-mobile{
+    display: block;
+    max-width: 90%;
+    text-align: center;
+    margin:auto;
+}
+/*    ---------ボタン固定---------    */
+.orange{
+    max-width: 80%;
+    position: fixed;
+    bottom:4rem;
+
+}
+/*    ---------テレビCM ---------    */
+.tv-left iframe{
+    display: block;
+    max-width: 95%;
+    height: auto;
+}
+
+
+/*    ---------フッター ---------    */
+footer ul{
+    flex-direction: column;
+    text-align: center;
+}
+footer ul li:not(:last-child){
+    margin-bottom:0.8rem;
+}
+footer p{
+    padding-bottom:10rem;
+    text-align: center;
+}
+
+}
