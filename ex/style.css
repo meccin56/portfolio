@@ -84,6 +84,9 @@ img{
 }
 
 /*    ---------ボタン---------    */
+.btn-orange{
+    margin: auto;
+}
 .orange{
     width: 400px;
     background-color: #ffaa33;
@@ -464,7 +467,7 @@ gap:2rem;
 }
 /*    ---------ボタン固定---------    */
 .orange{
-    max-width: 50%;
+    max-width: 70%;
     position: fixed;
     bottom:4rem;
 
