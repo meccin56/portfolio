@@ -14,6 +14,20 @@ body{
     color: #404040;
 }
 
+/*    ---------スライド ---------    */
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+
+
 /*    ---------テキスト---------    */
 p, li{
     letter-spacing: .2em;
@@ -154,10 +168,6 @@ li{
 }
 
 /*    --------- フレックスレイアウト ---------    */
-.support{
-    display: flex;
-}
-
 .skills{
     display: flex;
     justify-content: space-between;
@@ -188,6 +198,22 @@ li{
     width: 70%;
     margin: auto;
     gap:4rem;
+}
+.support{
+    display: flex;
+    justify-content: flex-start;
+    gap:1rem;
+    margin-bottom:4rem;
+}
+.support1{
+    width: 120px;
+}
+.support1 img{
+    max-width: 118px;
+    height: auto;
+}
+.support2{
+    margin: auto;
 }
 
 /*    --------- テレビCM ---------    */
@@ -257,21 +283,7 @@ li{
     grid-template-columns: repeat(2, 1fr);
     gap:1rem;
 }
-.support{
-    display: flex;
-    justify-content: flex-start;
-    gap:1rem;
-}
-.support1{
-    width: 120px;
-}
-.support1 img{
-    max-width: 118px;
-    height: auto;
-}
-.support2{
-    margin: auto;
-}
+
 
 .mama{
     display: flex;
@@ -330,21 +342,27 @@ footer p{
     margin-top:2rem;
 }
 
+
+
+
+
+
 @media (max-width: 600px) {
     /*    --------- レスポンシブのメニュー---------    */
 
 /*    ---------大枠---------    */
 header,section,footer{
     width: 370px;
-    padding-right: 6%;
-    padding-left: 6%;
+    padding-right: 10%;
+    padding-left: 10%;
     margin:0 auto;
 }
 section{
-    margin-bottom:8rem;
+    margin-bottom:6rem;
 }
-body{
-    padding:0 2rem;
+
+h3{
+    margin-bottom:2rem;
 }
 
 
@@ -398,7 +416,7 @@ gap:2rem;
 
 /*    --------- スマホで表示するハンバーガーアイコン ---------    */
 .menu{
-    display: block;]
+    display: block;
     padding-left: 10%;
 }
 #hum{
@@ -429,6 +447,9 @@ gap:2rem;
 }
 .mama:not(:last-of-type){
    padding-bottom:4rem;
+}
+.mama1{
+    max-width: 70%;
 } 
 .skill3{
     margin-bottom:4rem;
@@ -446,8 +467,13 @@ gap:2rem;
 }
 .teacher:not(:last-child){
     margin-bottom:3rem;
+}
+.support{
+    margin-bottom:4rem;
 } 
-
+.after{
+    margin-bottom:4rem;
+}
 
 /*    --------- グリッドレイアウト ---------    */
 .grid1{
