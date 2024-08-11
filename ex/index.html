@@ -23,6 +23,9 @@
 
 <!-- JavaScriptの読み込み -->
 <script src="script.js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+
 </head>
 
 <body>
@@ -90,7 +93,20 @@
         </p>
     </div>
     <div class="flex-right">
-        <img src="img/slide/A01.jpg">
+
+            <ul class="slider">
+                <li><img src="img/A01.jpg" alt=""></li>
+                <li><img src="img/A02.jpg" alt=""></li>
+                <li><img src="img/A03.jpg" alt=""></li>
+                <li><img src="img/A04.jpg" alt=""></li>
+                <li><img src="img/A05.jpg" alt=""></li>
+                <li><img src="img/A06.jpg" alt=""></li>
+                <li><img src="img/A07.jpg" alt=""></li>
+                <li><img src="img/A08.jpg" alt=""></li>
+                <li><img src="img/A09.jpg" alt=""></li>
+                <li><img src="img/A10.jpg" alt=""></li>
+            </ul>
+
     </div>
 </section>
 
@@ -684,6 +700,15 @@
     </a>
 </section>
 
+<!-- モーダル -->
+<div id="modal-overlay">
+    <div class="modal-mask"></div>
+      <div class="modal-container">
+        <div class="modal-title"><img src="img/click3.gif" alt="無料お試し"></div>
+        <p class="close">&times;</p>
+    </div>
+</div>
+
 <footer>
         <ul>
             <li class="footer-li">利用規約</li>
@@ -695,5 +720,10 @@
         </ul>
     <p>Copyright 2019　<span class="p-small3">Timers inc. </span>　 All rights reserved.</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </body>
 </html>
