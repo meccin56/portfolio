@@ -51,10 +51,14 @@ transform: translate(-50%, -50%);
 }
 
 .modal-title {
-width: 80%;
+max-width: 100%;
+height: auto;
 text-align: center;
-margin:auto;
+margin:0 auto;
 }
+
+
+
 
 .close{
 font-size: 40px;
@@ -395,7 +399,7 @@ footer p{
     /*    --------- レスポンシブのメニュー---------    */
 
 /*    ---------大枠---------    */
-header,section,footer{
+header,section,footer,#modal-overlay{
     width: 370px;
     padding-right: 10%;
     padding-left: 10%;
@@ -422,8 +426,13 @@ display: block;
 background-color: 	#F0F0F0;
 position: absolute;
 top:0px;
-left: -340px; 
-width: 340px;
+/* left: -340px; 
+width: 340px; */
+
+left: -300px; 
+width: 300px;
+
+
 height: 100vh;
 padding:4rem 2rem;
 opacity: 1;
@@ -549,6 +558,7 @@ gap:2rem;
     max-width: 95%;
     height: auto;
 }
+
 
 
 /*    ---------フッター ---------    */
