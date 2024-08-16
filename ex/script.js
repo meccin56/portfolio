@@ -42,12 +42,12 @@ $('.slider').slick({
 });
 
 
-// スライドショー  ----------------------------
+// モーダル  ----------------------------
 $('#modal-overlay').hide();
 
 setTimeout(() => {
   $('#modal-overlay').fadeIn(400);
-},2000);
+},12000);
 
 $('.close, .modal-mask').click(function() {
   $('#modal-overlay').fadeOut(400);

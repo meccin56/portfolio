@@ -399,7 +399,7 @@ footer p{
     /*    --------- レスポンシブのメニュー---------    */
 
 /*    ---------大枠---------    */
-header,section,footer,#modal-overlay{
+header,section,footer{
     width: 370px;
     padding-right: 10%;
     padding-left: 10%;
