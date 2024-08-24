@@ -1,10 +1,104 @@
 @charset 'UTF-8';
-main,section,header,footer{
-    width: 800px;
+
+
+h4{
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-bottom:3rem;
+}
+a{
+    text-decoration: none;
+}
+
+/*    ---------ボタン---------    */
+.button1{
+    width: 30%;
+    background-color: #fcacba;
+    border-bottom:7px solid rgb(255, 111, 135);
+    padding:1rem;
+    box-shadow: 0 3px 4px black;
+    cursor: pointer;
+    transition: all .8s;
+}
+.button1 p{
+    color:#ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;  
+}
+.button1:hover{
+    margin-top:5px;
+    border-bottom: 1px solid #fcacba;
+}
+
+/*    ---------モーダル---------    */
+.sample-modal{
+    width: 90%;
+    background-color: aliceblue;
+    margin:auto;
+    padding:3rem;
+}
+#open,#close{
+    padding:10px;
+    background-color: #fcacba;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    margin:auto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #ffffff;
+    border-radius: 8px;
+}
+#close{
+    margin-top:2rem;
+}
+#mask{
+    background-color: rgb(0, 0, 0,.8);
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+}
+#modal{
+    background-color: rgb(255, 200, 80);
+    width: 350px;
+    margin:auto;
+    padding:2rem;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     margin: auto;
-    margin-bottom:80px;   
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index:20;
+    transition: transform 0.5s;
+}
+#mask.hidden{
+    display: none;
+}
+#modal.hidden{
+    transform:translate(-50%,-1000px)
+}
+
+
+
+
+.wrapper{
+    width: 80%;
+    margin:auto;
+}
+main,section,header,footer{
     padding:40px;
 }
+header,section{
+    margin-bottom:40px;
+}
+
 li{
     list-style: none;
 }
@@ -13,61 +107,17 @@ ul{
     justify-content: space-between;
 }
 
-main{
-    background-color: rgb(241, 255, 240);
-}
+
 section{
-    background-color: antiquewhite;
+    background-color: rgb(215, 250, 234);
 }
 header{
     background-color: rgb(217, 252, 253);
 }
 footer{
-    background-color: rgb(234, 219, 249);
+    background-color: rgb(217, 252, 253);
 }
 
 
-#modal-open,
-#modal-close{
-    width: 320px;
-    margin:40px auto;
-    border:1px solid blue;
-    padding:10px;
-    text-align: center;
-    cursor: pointer;
-}
-#modal-close{
-    margin:10px auto;
-}
 
 
-#modal-bg{
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    background-color: rgba(0, 255, 255, 0.6);
-    opacity: 0;
-    pointer-events: none;
-}
-#modal-bg.active{
-    opacity:1;
-    pointer-events: auto;
-}
-
-#modal-container{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #ffffff;
-    padding:40px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-#modal-container.active{
-    opacity:1;
-    pointer-events: auto;
-}

@@ -1,21 +1,34 @@
 'use strict';
+
 {
-    const open= document.getElementById('modal-open');
-    const container= document.getElementById('modal-container');
-    const modalBg= document.getElementById('modal-bg');
-    const close= document.getElementById('modal-close');
+    const open= document.getElementById('open');
+    const modal= document.getElementById('modal');
+    const mask= document.getElementById('mask');
+    const close= document.getElementById('close');
     
-    open.addEventListener('click', ()=>{
-        container.classList.add('active');
-        modalBg.classList.add('active');
+
+
+    open.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        mask.classList.remove('hidden');
     });
+
     close.addEventListener('click', () => {
-        container.classList.remove('active');
-        modalBg.classList.remove('active');
+        modal.classList.add('hidden');
+        mask.classList.add('hidden');
     });
-    modalBg.addEventListener('click', () => {
-        container.classList.remove('active');
-        modalBg.classList.remove('active');
+
+    mask.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        mask.classList.add('hidden');
     });
-    
+
+
+
 }
+
+
+
+
+
+
