@@ -47,7 +47,7 @@ $('#modal-overlay').hide();
 
 setTimeout(() => {
   $('#modal-overlay').fadeIn(400);
-},12000);
+},2000);
 
 $('.close, .modal-mask').click(function() {
   $('#modal-overlay').fadeOut(400);

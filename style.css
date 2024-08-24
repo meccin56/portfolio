@@ -154,6 +154,16 @@ gap:2rem;
     width: 30%;
     height: auto;
 }
+.lp2{
+    display: flex;
+
+    gap:4rem;
+    margin-bottom:2rem;
+}
+.lp2s,.lp2pc{
+    height: 280px;
+    width: auto;
+}
 
 /*    --------- 仕事歴 ---------    */
 .management{
@@ -289,6 +299,23 @@ gap:2rem;
     .tax{
         display: block;
     }
+
+    /*    --------- LP---------    */
+    .lp2s{
+        height: auto;
+        width: 120px;
+        margin:1rem auto;
+    }
+    .lp2pc{
+        width: 300px;
+        height: auto;
+    }
+    .lp2{
+
+        flex-direction: column;
+
+    }
+
     /*    --------- 現在 ---------    */
     .now{
         display: block;    
