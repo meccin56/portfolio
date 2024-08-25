@@ -48,6 +48,24 @@
     });
 }
 
+// スクロールしたらふわっと表示
+{
+    const LookMe = document.getElementById('look-me');
+    window.addEventListener('scroll', () => {
+
+        let scrollY = window.scrollY;
+        if(2000 < scrollY){
+            LookMe.classList.add('on');
+        }else{
+            LookMe.classList.remove('on');
+        }
+        
+    });
+
+
+}
+
+
 
 
 

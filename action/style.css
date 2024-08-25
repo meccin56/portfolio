@@ -132,6 +132,32 @@ a{
     text-align: center;
 }
 
+/* アナウンススクロールするとふわっと */
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin:20px;
+    margin:100px auto;
+    border-radius: 8px;
+}
+#look-me{
+    position:fixed;
+    bottom:200px;
+    right: 200px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(206, 206, 255);
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+    text-align: center;
+    padding:30px;
+}
+#look-me.on{
+    visibility: inherit;
+    opacity: 1;
+}
 
 
 /*    ---------基本のレイアウト---------    */
@@ -163,6 +189,9 @@ header{
 }
 footer{
     background-color: rgb(217, 252, 253);
+}
+.visibility{
+    color: #ff0000;
 }
 
 

@@ -15,7 +15,7 @@
 <body>
 <div class="wrapper">
  <header>
-    <h3>サンプルコード　初心者の私が最も理解しやすかった作り方、備忘録<h3>
+    <h3>初心者の私が最も理解しやすかった作り方、備忘録<h3>
 </header>
 
 <section>
@@ -59,7 +59,6 @@
         </p>
         <p id="close2">&times;</p>
     </div>
-
 </section>
 
 <section>
@@ -79,9 +78,37 @@
 
 <section>
     <p>
-        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです        
+        #box_fixed{<br>
+
+            <span class="visibility">visibility: →hidden;</span>display:none;でふわっとが効かない時に使うといい<br>
+            (displya:none;)<br>
+            transition: 1.5s;<br>
+            opacity: 0;<br>
+        }<br>
+        <br>
+        #box_fixed.on{<br>
+            <span class="visibility">visibility: inherit;</span><br>
+            (display:block;)<br>
+            opacity: 1;<br>
+        }
+        
     </p>
 </section>
+<section>
+
+    <p class="mite-title">スクロールしたらアナウンスが表示される</p>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div id="look-me">
+        <p>ここにお得情報など表示</p>
+    </div>
+</section>
+
 <footer>
     <nav>
             <ul>
