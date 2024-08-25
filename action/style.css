@@ -85,9 +85,56 @@ a{
     transform:translate(-50%,-1000px)
 }
 
+/*    ---------モーダル2---------    */
+#open2{
+    padding:10px;
+    background-color: azure;
+    width: 350px;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px black;
+}
+#close2{
+    cursor: pointer;
+}
+#open2:hover{
+    background-color: #74ffab;
+}
+.hidden2{
+    display: none;
+}
+#mask2{
+    background-color: rgb(0, 0, 0,0.8);
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#modal2{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    margin:auto;
+    padding:2rem;
+    position: relative;
+    z-index: 21;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#modal2 .hidden2{
+    display: none;
+}
+.text2{
+    padding:20px;
+    text-align: center;
+}
 
 
 
+/*    ---------基本のレイアウト---------    */
 .wrapper{
     width: 80%;
     margin:auto;
