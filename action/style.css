@@ -149,7 +149,7 @@ a{
     height: 300px;
     background-color: rgb(206, 206, 255);
     visibility: hidden;
-    transition: .5s;
+    transition: 2s;
     opacity: 0;
     text-align: center;
     padding:30px;
