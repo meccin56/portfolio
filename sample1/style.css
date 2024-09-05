@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+*{
+    box-sizing: border-box;
+    color:#ffffff;
+}
+.page{
+    background-image: url(img/img2.jpg),linear-gradient(#ff0606,rgb(255, 49, 255));
+
+    background-size: cover; 
+    background-blend-mode: luminosity;
+    height: 100vh;
+}
+.page{
+    /* background-image: linear-gradient(#ff0606,rgb(255, 49, 255));
+
+    /* background-size: cover;  */
+
+    height: 100vh; */
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    height: 100vh;
+}
+.message h1{
+    font-size: 3rem;
+}
+.message p{
+    font-size: 2rem;
+}
+
+
