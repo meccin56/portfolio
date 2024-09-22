@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    background-color:rgb(185, 185, 185);
+    padding:40px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(214, 252, 218);
+    width: 100%;
+}
+section{
+    background-color: rgb(220, 220, 220);
+    width: 100%;
+}
+.tairu img{
+    /* 引数のうち大きい方が採用される */
+    /* 300px、または、親要素の20%幅のどちらか大きい方で表示してくれる */
+    width: max(240px, 20%);
+}
+.frame img{
+    width: max(200px,100%);
+}

@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body{
+    background-image:url(../tax/img/mv.jpg);
+    background-color:rgba(230, 250, 0, 0.5);
+    background-blend-mode:lighten;
+    background-size: cover;
+}
+
+section{
+    margin-bottom:60px;
+    background-color: aquamarine;
+    height: 600px;
+}
+.tate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    height: 400px;
+}
+.mannaka{
+    height: auto;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+header,footer{
+    background-color: blueviolet;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom:60px;
+    height: 100px;
+}
+section img{
+    width: 150px;
+    height: 150px;
+}
+.kk img{
+    vertical-align: middle;
+    width: 200px;
+}
