@@ -9,6 +9,11 @@ h4{
 a{
     text-decoration: none;
 }
+.wrapper{
+    width: 100%;
+    margin: 0 atuo;
+    padding:0 40px;
+}
 
 /*    ---------ボタン---------    */
 .button1{
@@ -161,24 +166,6 @@ a{
 
 
 /*    ---------基本のレイアウト---------    */
-body{
-    width: 100%;
-    margin:auto;
-}
-/* .wrapper{
-    width: 100%;
-    background: linear-gradient( rgba(255, 0, 234, 0.2),rgba(255, 255, 255), rgba(255, 0, 234, 0.3));
-    margin:0 auto;
-} */
-/* header,footer{
-    width: 100%;
-    padding:40px;
-    
-} */
-main,section{
-    padding:40px;
-    width: 80%;
-}
 header,section{
     margin-bottom:40px;
 }

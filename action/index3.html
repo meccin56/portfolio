@@ -10,28 +10,43 @@
     <!-- <script src="script.js" defer></script> -->
 
 </head>
-
-
 <body>
-
 <div class="wrapper">
-
-<header>
-    <h1>ブレイクポイントの設定無しで、レスポンシブチャレンジ</h1>
-</header>
+    <header>
+        <p class="tag">header</p>
+        <h1>ブレイクポイントの設定無しで、レスポンシブチャレンジ</h1>
+    </header>
 
     <section>
-        <p>ブレイクポイントでレスポンシブのコーディングを書いていると、パディングやら頭がごちゃごちゃになってきます。</p>
+        <p class="tag">section</p>
+        <p>ブレイクポイントでレスポンシブのコーディングを書いていると、パディングやら頭がごちゃごちゃになってきます。<br>
+        タブレットとスマホの間あたりがおかしな配置にもなります。</p>
         <p>width: max(,)</p>
         <p>width: min(,)</p>
         <p>を使って、スッキリこの作業を終えてみようチャレンジです</p>
+        <p>
+        <span>
+        width:300px;<br>
+        max-width:100%<br>
+        こちらの方が私は理解しやすい
+        </span>
+        </p>
    </section>
 
    <section>
-    <div class="frame">
-        <img src="yokohaba.png">
-    </div>
-    <div class="tairu">
+    <p class="tag">section</p>
+    <P class="hosoku">
+        /* 引数のうち小さい方が採用される */<br>
+        /* 500px、または、親要素の100%幅のどちらか小さい方で表示してくれる */<br>
+        /* スマホの時は、1行に1タイル */<br>
+        /* タブレットの時は、1行に2タイル */<br>
+        /* PCの時は、1行に3タイル */<br>
+        <span>
+        width: min(500px, 100%);<br>
+        height: auto;
+        </span>
+    </P>
+    <div class="tairuA">
         <img src="Rectangle 14.jpg">
         <img src="Rectangle 15.jpg">
         <img src="Rectangle 16.jpg">
@@ -40,8 +55,36 @@
         <img src="Rectangle 16.jpg">
     </div>
    </section>
-    
-</div>
 
+   <section>
+    <p class="tag">section</p>
+    <P class="hosoku">
+        この書き方の方が、素直に理解できる<br>
+        <span>
+        max-width:100%;<br>
+        width:300px;
+        </span>
+        
+    </P>
+    <div class="tairuB">
+        <img src="spring.jpg">
+        <img src="summer.jpg">
+        <img src="autumn.jpg">
+        <img src="winter.jpg">
+        <img src="spring.jpg">
+        <img src="summer.jpg">
+        <img src="autumn.jpg">
+        <img src="winter.jpg">
+        <img src="spring.jpg">
+        <img src="summer.jpg">
+        <img src="autumn.jpg">
+        <img src="winter.jpg">
+    </div>
+   </section>
+   <footer>
+    <p class="tag">footer</p>
+    <a href="https://meccin56.github.io/portfolio/index.html" target="_blank"><p>このサイトは私が書きました<p></a>
+    </header>
+</div><!-- wrapperのdiv終わり -->
 </body>
 </html>

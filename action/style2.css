@@ -6,8 +6,8 @@ html {
     font-size: 100%;
 }
 body{
-    background-image:url(../tax/img/mv.jpg);
-    background-color:rgba(230, 250, 0, 0.5);
+    background-image:url(summer.jpg);
+    /* background-color:rgba(230, 250, 0, 0.5); */
     background-blend-mode:lighten;
     background-size: cover;
 }
