@@ -54,7 +54,7 @@
     window.addEventListener('scroll', () => {
 
         let scrollY = window.scrollY;
-        if(2000 < scrollY){
+        if(scrollY > 2000){
             LookMe.classList.add('on');
         }else{
             LookMe.classList.remove('on');
