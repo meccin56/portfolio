@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptのあれこれ</title>
+
+            <!-- CSS -->
+            <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+            <link rel="stylesheet" href="style.css">
+    
+            <!-- フォントの読み込み -->
+            <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet"> -->
+        
+            <!-- JavaScriptの読み込み -->
+            <script src="script2.js" defer></script>
+
+
+</head>
+<body>
+<header>
+    <p>ヘッダー</p>
+</header>
+<nav>
+    <ul>
+        <a href="index.html"><li>HOME</li></a>
+        <a href="array.html"><li>配列</li></a>
+        <a href="observe.html"><li>Observe</li></a>
+        <a href="foreach.html"><li>forEach</li></a>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Intersection Observer</h2>
+        <p>交差を監視してくれるJavaScriptの機能<br>
+        監視対象のサイズや名前、監視領域に侵入したかどうかなどの情報を全て把握してくれる。<br>
+        関数が呼び出される時に、引数に、交差状態に関する情報が自動的に渡される。<br>
+        情報は配列で渡される。<br>
+        forEachとの組み合わせでマスターすべし。
+        </p>
+    </section>
+    <section class="vh100">
+        <p>スクロールするとテキストが左から、画像が右からアニメーションして現れる</p>
+        <p>↓</p>
+        
+    </section>
+
+    <section class="layout1">
+        <div class="left">
+            <p>
+                スクロースすると<br>
+                テキスト：左からフェードイン→<br>
+                画像：右からフェードイン→<br>
+            </p>
+        </div>
+        <div class="right">
+            <img src="img/001.jpg">
+        </div>
+    </section>
+</main>
+<footer>
+    <p>フッター</p>
+</footer>
+    
+</body>
+</html>

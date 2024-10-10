@@ -1,0 +1,102 @@
+/* 共通 -----------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+body{
+    /* font-family: "Zen Old Mincho", serif; */
+    font-size: 100%;
+
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+li{
+    list-style: none;
+    padding:2px 20px;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+li:hover{
+    box-shadow : 0px 1px 1px 0px #989898;
+    translate: 0 2px;
+}
+h2{
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+span{
+    background-color: #eaeaea;
+}
+
+/* ナビ -------------------------------------------------------*/
+ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* 全体レイアウト -----------------------------------------------*/
+header,footer,nav,main{
+    width: 100%;
+    padding:20px 40px;
+}
+section{
+    width: 100%;
+    padding:15px;
+    background-color: #ffffff;
+    margin-bottom: 60px;
+}
+header,footer{
+    background-color: #dddddd;
+    text-align: right;
+}
+header p,footer p{
+    background-color: #ffffff;
+    display: inline-block;
+    padding:2px 20px;
+}
+nav{
+    background-color: rgb(252, 253, 196);
+}
+main{
+    background-color: rgb(201, 255, 237);
+}
+
+/* 配列 -----------------------------------------------*/
+.items img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.items{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.items img:hover{
+    scale: 0.95;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+/* 監視 -----------------------------------------------*/
+.vh100{
+    height: 100vh;
+}
+.layout1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+}
+/* 監視2forEach -----------------------------------------------*/
+.layout2{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    place-items: center;
+}
+
+
