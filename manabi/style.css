@@ -232,8 +232,7 @@ h4{
 .menu-item{
     background-color: rgb(228, 254, 254);
     padding:15px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 .menu-item:hover{
     font-weight: bolder;
