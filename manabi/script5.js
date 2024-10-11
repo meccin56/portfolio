@@ -26,17 +26,22 @@ MenuBtn.addEventListener('click', ()=> {
 
 
     ToggleOpen.addEventListener('click', ()=> {
-        MenuBoxB.animate({translate:[  0, '-300px 0']},Options);
+        MenuBoxB.animate(
+            {
+                translate:[  0, '-300px 0'],
+                opacity:[0, 1],
+            },
+            Options);
         MenuItemBs.forEach((MenuItemB,index) => 
             {
                 MenuItemB.animate(
                     {
                         opacity:[ 0, 1],
-                        translate:[ '3rem',0],
+                        translate:[ '4rem',0],
                     },
                     {
                         duration: 2400,
-                        delay: 300* index,
+                        delay: 400* index,
                         easing: 'ease',
                         fill: 'forwards',
                     }
@@ -49,7 +54,12 @@ MenuBtn.addEventListener('click', ()=> {
     });
 
     ToggleClose.addEventListener('click', ()=>{
-        MenuBoxB.animate({translate: ['-300px 0', 0]}, Options);
+        MenuBoxB.animate(
+            {
+                translate: ['-300px 0', 0],
+                opacity:[1, 0],
+            }, 
+            Options);
         MenuItemBs.forEach((MenuItemB)=> {
             MenuItemB.animate({opacity: [1, 0]}, Options);
         });
