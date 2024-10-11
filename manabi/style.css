@@ -49,7 +49,7 @@ ul{
 /* 全体レイアウト -----------------------------------------------*/
 header,footer,nav,main{
     width: 100%;
-    padding:20px 40px;
+    padding:30px 200px;
 }
 section{
     width: 100%;
@@ -68,6 +68,7 @@ header p,footer p{
 }
 nav{
     background-color: rgb(236, 236, 236);
+    margin-bottom: 60px;
 }
 main{
     /* background-color: rgb(201, 255, 237); */
@@ -105,7 +106,7 @@ h4{
     place-items: center;
 }
 
-/* 監視2forEach -------------------------------------------*/
+/* 監視2forEach -----------------------------------------*/
 .layout2{
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -163,4 +164,30 @@ h4{
     display: inline-block;
 }
 
-
+/* モーダル --------------------------------------------*/
+.menu-box{
+    border: 1px solid #989898;   
+    width: 40%;
+    height: auto;
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-items.active{
+    opacity: 1;
+    visibility: visible;
+}
+.menu-menu{
+    padding:15px;
+    border-bottom: 1px solid #989898;
+}
+.menu-item{
+    background-color: rgb(228, 254, 254);
+    padding:15px;
+}
+.menu-item:not(:last-child) {
+    border-bottom: 1px solid #989898;
+}
