@@ -17,7 +17,7 @@ const showSlides = () => {
     slides[slideIndex - 1].classList.add('active');
     
     // 3秒ごとに次のスライドに切り替え
-    setTimeout(showSlides, 3000);
+    setTimeout(showSlides, 2000);
 };
 
 // ページが読み込まれたら自動でスライドショーを開始
