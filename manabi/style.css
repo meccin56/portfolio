@@ -43,7 +43,8 @@ span{
 /* ナビ -------------------------------------------------------*/
 ul{
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* 全体レイアウト -----------------------------------------------*/
@@ -322,4 +323,33 @@ z-index: 10;
 font-size: 3rem;
 color: #ffffff;
 font-weight: bold;
+}
+
+/* イベントの後にテキストが変わる --------------------------------------------*/
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 161, 161);
+    /* 変化を時間をかけて行う */
+    transition: all 2s;
+    display: grid;
+    place-items: center;
+
+    
+}
+.container.show{
+    width: 500px;
+    height: 500px;
+
+    background-color: red;
+
+}
+.btn{
+    font-size: 1.2rem; 
+    transition: all 2.1s;
+    border-radius: 10px;
+}
+.btn.show{
+    color:#ffffff;
+    font-size:3rem;
 }
