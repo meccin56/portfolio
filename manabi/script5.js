@@ -12,6 +12,7 @@ MenuBtn.addEventListener('click', ()=> {
 }
 
 
+
 // スライドメニュー     ----------------------------------------------------
 {
     const ToggleOpen = document.querySelector('.toggle_open');
@@ -41,7 +42,7 @@ MenuBtn.addEventListener('click', ()=> {
                     },
                     {
                         duration: 2400,
-                        delay: 400* index,
+                        delay: 200* index,
                         easing: 'ease',
                         fill: 'forwards',
                     }
