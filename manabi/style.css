@@ -329,16 +329,18 @@ font-weight: bold;
 .container{
     width: 200px;
     height: 200px;
-    background-color: rgb(255, 161, 161);
+    border: 1px solid #0c0603;
+    color: #ffffff;
     transition: all 1.5s;
     display: grid;
     place-items: center;
     cursor: pointer;
+    color: #0c0603;
 }
 .container.show{
     width: 500px;
     height: 500px;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
 
 }
 .t-end{
@@ -350,4 +352,57 @@ font-weight: bold;
 .t-end.show{
     color:#ffffff;
     font-size:3rem;
+}
+
+/* ローディング --------------------------------------------*/
+.section{
+    width: 100%;
+    opacity: 0;
+}
+.section.visible{
+    opacity: 1;
+}
+.allimg{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.allimg img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.loader-container{
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: #0c0603;
+    display: grid;
+    place-items: center;
+}
+.loader-container.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader{
+    width: 64px;
+    height: 64px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    /* 透明 */
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: spin 1s ease infinite alternate;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg) scale(1);
+
+    }
+    100%{
+        transform: rotate(360deg) scale(2);
+    }
 }
