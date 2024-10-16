@@ -1,16 +1,22 @@
 const container = document.querySelector('.container');
-const btn = document.querySelector('.btn');
+const tEnd = document.querySelector('.t-end');
 
-btn.addEventListener('click', ()=> {
-  if(container.classList.contains('show')=== false){
-  container.classList.add('show');
-  }
-  if(btn.classList.contains('show')=== false){
-    btn.classList.add('show');
-  }
 
+// コンテナをクリックしたときの処理
+container.addEventListener('click', ()=> {
+  container.classList.toggle('show');
+  tEnd.classList.toggle('show');
 });
 
-container.addEventListener("transitionend", (e) => {
-  btn.textContent = "クリックされた！";
+// トランジションが終わったときの処理
+container.addEventListener("transitionend", () => {
+  if (container.classList.contains('show')) {
+      tEnd.textContent = "クリックされたよ！";
+  } else {
+      tEnd.textContent = "元に戻ったよ！"; // 元に戻った場合のテキスト
+  }
 });
+
+// .container をクリックすると、show クラスがトグルされ、トランジションが発生します。
+// トランジションが終了すると、.t-end のテキストが「クリックされた！」に変更されます。
+// 再度クリックして元の状態に戻ると、"元に戻った！" というテキストに変更されます。

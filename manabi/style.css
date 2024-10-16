@@ -330,26 +330,24 @@ font-weight: bold;
     width: 200px;
     height: 200px;
     background-color: rgb(255, 161, 161);
-    /* 変化を時間をかけて行う */
-    transition: all 2s;
+    transition: all 1.5s;
     display: grid;
     place-items: center;
-
-    
+    cursor: pointer;
 }
 .container.show{
     width: 500px;
     height: 500px;
-
     background-color: red;
 
 }
-.btn{
+.t-end{
     font-size: 1.2rem; 
-    transition: all 2.1s;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 1.5s;
 }
-.btn.show{
+.t-end.show{
     color:#ffffff;
     font-size:3rem;
 }
