@@ -531,8 +531,19 @@ select{
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
-    background: #ececec;
+    background-color: #ececec;
 }
+select:hover{
+    background-color: #ffffff;
+}
+.kikukopi p:hover{
+    background-color: #ffffff;
+}
+.honyaku-btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #444;
+}
+
 .kikukopi p{
     line-height: 32px;
     font-size: 16px;
@@ -541,14 +552,15 @@ select{
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
-    background: #ececec;
+    background-color: #ececec;
 }
 .honyaku-btn{
     width: 200px;
     height: 38px;
     border: none;
     outline: none;
-    background: #c2c2c2;
+    background-color: #c2c2c2;
+    
     color: #000000;
     font-size: 16px;
     line-height: 38px;
