@@ -1,3 +1,18 @@
+// 今日の日付  -----------------------------------------------
+
+// 現在の日付を取得
+const today = new Date();
+const year = today.getFullYear();
+const month = today.getMonth() + 1; // 月は0から始まるため1を加える
+const day = today.getDate();
+
+// 日付を表示する要素を取得
+const dateElement = document.querySelector('.dateDisplay');
+
+// 日付をHTML上に表示
+dateElement.textContent = `今日は${year}年${month}月${day}日です`;
+
+
 
 // 配列  ----------------------------------------------------
 const Items = document.querySelector('.items');

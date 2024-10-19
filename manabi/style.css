@@ -74,6 +74,15 @@ nav{
 main{
     /* background-color: rgb(201, 255, 237); */
 }
+/* 今日の日付 --------------------------------------------*/
+.dateDisplay{
+    
+    line-height: 4rem;
+    font-size: 1rem;
+    
+    margin-top: 10rem;
+    text-align: right;
+}
 
 /* 配列 -----------------------------------------------*/
 .items img{
