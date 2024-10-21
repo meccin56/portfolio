@@ -33,9 +33,16 @@ for(let n = 0; n < 5; n++){
                 createHtml += '<td></td>'
             }else if(dayCount > lastDayCount){
                 createHtml += '<td></td>'
-            }else{
-                createHtml += '<td>' + dayCount + '</td>';
-                dayCount++
+            }else {
+                // 日曜日か土曜日ならフォントカラーを変える
+                if(d === 0){
+                    createHtml += '<td style="color: red;">' + dayCount + '</td>';
+                } else if(d === 6){
+                    createHtml += '<td style="color: blue;">' + dayCount + '</td>';
+                } else {
+                    createHtml += '<td>' + dayCount + '</td>';
+                }
+                dayCount++;
             }
         }
     createHtml += '</tr>'
@@ -45,6 +52,7 @@ createHtml += '</table>'
 document.querySelector('.calendar').innerHTML = createHtml;
 
 console.log(createHtml);
+
 
 
 
