@@ -36,10 +36,6 @@ h2{
     font-weight: normal;
     margin-bottom: 40px;
 }
-span{
-    background-color: #eaeaea;
-}
-
 /* ナビ -------------------------------------------------------*/
 ul{
     display: flex;
@@ -94,15 +90,14 @@ main{
 }
 .items{
     display: flex;
-    gap:10px;
-    justify-content: center;
+    gap:50px 13px;
     flex-wrap: wrap;
 }
 .items img:hover{
     scale: 0.95;
 }
 h4{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: normal;
 }
 
@@ -523,5 +518,27 @@ select:hover{
     padding: 10px;
     line-height: 2rem;
 }
+
+/* カレンダー --------------------------------------------*/
+.calendar{
+    background-color: #ebebeb;
+    padding:10px;
+    font-size: 1.1rem;
+    width: 500px;
+}
+.calendar table{
+    width: 100%;
+}
+.calendar td{
+    background-color: #ffffff;
+    padding:10px;
+    text-align: center;
+}
+
+.hiniti{
+    font-size: 0.9rem;
+    text-align: right;
+}
+/*  --------------------------------------------*/
 
 
