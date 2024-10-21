@@ -539,6 +539,53 @@ select:hover{
     font-size: 0.9rem;
     text-align: right;
 }
+/*  カラー占い--------------------------------------------*/
+.fortune{
+    border: 1.5px solid rgb(107, 107, 107);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.fortune:hover{
+    background-color: rgb(107, 107, 107);
+    color: #ffffff;
+    transform: scale(0.85);
+}
+.fortune-result{
+    width: 200px;
+    height: 200px;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+.fortune-result-comment{
+    font-size: 1.3rem;
+}
+.fortune-result-wrapper{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+    color: #5c5c5c;
+}
+.purple{
+    background-color: purple;
+}
+.green{
+    background-color: green;
+}
 /*  --------------------------------------------*/
-
-

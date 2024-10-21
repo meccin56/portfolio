@@ -51,6 +51,12 @@ const Lists = [
         star: '☆☆☆',
         img: '015.jpg',
     },
+    {
+        name: 'プランI',
+        price: '1,200',
+        star: '☆',
+        img: '011.jpg',
+    },
 ];
 
 for(let i = 0; i < Lists.length; i++){
